@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en-US" class="">
+
+<!-- FROM m062 file https__www.nbclosangeles.com_news_local_privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online_2749633_ -->
+
+<head>
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"53cef82690",applicationID:"189190456"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1211.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<title>Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online &#8211; NBC Los Angeles</title>
+<link rel='dns-prefetch' href='//ak.sail-horizon.com' />
+<link rel='dns-prefetch' href='//native.sharethrough.com' />
+<link rel='dns-prefetch' href='//js-sec.indexww.com' />
+<link rel='dns-prefetch' href='//z.moatads.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="NBC Los Angeles &raquo; Feed" href="https://www.nbclosangeles.com/?rss=y" />
+<link rel='stylesheet' id='all-css-0' href='https://www.nbclosangeles.com/_static/??-eJylz02OQiEQBOALjfCgefBYTFx4ku4GHDL8GMF4fTXGA6jrqvqSktfTjnubsU05/2KNQzbi3Zg4c2+SS34kdMklSB5Dcq+1N2H94i0y++jCBmZDXL2ouYl750e+aR5LJywiaeWBGWJ0QD4gqlV/bOJ5Zi5RaCCnvAWLK7ikOW2ev0UPz4mwrIyxlJID5OAAwKiPbSqd/4dwyZDlSCYtaFRISLC9zH39VfcnShu9LDeGW5l9' type='text/css' media='all' />
+<script id='ad-layers-dfp-js-extra'>
+var adLayersDFP = {"layerDebugLabel":"Current ad layer","consoleDebugLabel":"Switch to Google console","adUnitPrefix":"div-gpt-ad-"};
+</script>
+<script src='https://www.nbclosangeles.com/wp-content/plugins/ad-layers-nbc/js/ad-layers-dfp.js?ver=0.0.9' id='ad-layers-dfp-js'></script>
+<script id='ad-layers-js-extra'>
+var adLayersAdServer = {"jsAPIClass":"AdLayersDFPAPI"};
+</script>
+<script src='https://www.nbclosangeles.com/wp-content/plugins/ad-layers-nbc/js/ad-layers.js?ver=0.0.9' id='ad-layers-js'></script>
+<link rel="https://api.w.org/" href="https://www.nbclosangeles.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.nbclosangeles.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.nbclosangeles.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.6" />
+<link rel="canonical" href="https://www.nbclosangeles.com/news/local/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online/2749633/" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nbclosangeles.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.nbclosangeles.com%2Fnews%2Flocal%2Fprivacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online%2F2749633%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.nbclosangeles.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.nbclosangeles.com%2Fnews%2Flocal%2Fprivacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online%2F2749633%2F&#038;format=xml" />
+		<style>
+		.getty.aligncenter {
+			text-align: center;
+		}
+		.getty.alignleft {
+			float: none;
+			margin-right: 0;
+		}
+		.getty.alignleft > div {
+			float: left;
+			margin-right: 5px;
+		}
+		.getty.alignright {
+			float: none;
+			margin-left: 0;
+		}
+		.getty.alignright > div {
+			float: right;
+			margin-left: 5px;
+		}
+		</style>
+		<style type='text/css'>img#wpstats{display:none}</style><style type="text/css">
+	.hero-background:empty { background-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%,rgba(0,0,0,0) 20%), url('https://media.nbclosangeles.com/2019/09/LA_aerial-1-1.png?resize=1440%2C415&quality=85&strip=all'); }
+</style>
+<link rel="preload" href="https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/media/ArthouseOwned-Black.woff2" as="font" crossorigin /><link rel="preload" href="https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/media/ArthouseOwned-Bold.woff2" as="font" crossorigin /><link rel="preload" href="https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/media/ArthouseOwned-Medium.woff2" as="font" crossorigin /><link rel="preload" href="https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/media/ArthouseOwned-Light.woff2" as="font" crossorigin /><link rel="preload" href="https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/media/Roboto-Flex.woff2" as="font" crossorigin /><script>var nbc = {"brand":"nbc","callLetters":"KNBC","env":"production","fullDomain":"nbclosangeles.com","globalSiteKey":"la","comscore_c4":"NBC SOUTHERN CALIFORNIA","on_air_name":"NBC 4","host":"nbclosangeles.com","market":"nbclosangeles","pdkAcct":"Yh1nAC","sensitive":"","siteKey":"la","themeUrl":"https:\/\/www.nbclosangeles.com\/wp-content\/themes\/nbc-station","twitterVia":"nbcla","zipCode":"90012","dataLayer":{"adobe":{"prop1":"investigations","eVar1":"investigations","prop2":"article - general","prop3":"","eVar3":"","prop4":"","eVar4":"","eVar8":"nbc","prop8":"nbc","prop9":"D=v9","eVar9":"LA","prop10":"D=v10","eVar10":"KNBC","prop20":"nbcuotsdivisiontotal","prop21":"10092749633","eVar21":"10092749633","prop22":"Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online","eVar22":"Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online","prop28":"","eVar28":"","prop29":"investigations, news, local, randy-responds, randy-mac","prop32":"no keyword","prop57":"Home Top Stories, Investigations, Local, Newsletter Top Stories, Randy Responds","eVar57":"Home Top Stories, Investigations, Local, Newsletter Top Stories, Randy Responds","eVar59":"Nov 05, 2021 22:55:13 pm EDT","prop59":"D=v59","eVar68":"","eVar70":"Nov 05, 2021 22:55:05 pm EDT","prop74":"D=v74","eVar74":"page not sponsored","eVar76":"page not sponsored","eVar80":"article - general","eVar81":"10092749633","eVar90":"","list2":"investigations, news, local, randy-responds, randy-mac","attrs":[],"contextData":{"pagename":"","events":"","rsid":"nbcuotsdivisiontotal","callsign":"KNBC","businessunit":"nbclosangeles","division":"nbc","sitekey":"la","section":"investigations","subsection":"","subsubsection":"","exitlink":"","url":"https:\/\/www.nbclosangeles.com\/news\/local\/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online\/2749633\/","contentid":2749633,"localid":"1:9:2749633","contenttitle":"Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online","contenttype":"article","nationalized":false,"byline_authors":"Randy Mac, Christine Roher","date":"November 5, 2021","sourceid":"","source":"","pageName":"investigations:detail content page","collections":"Home Top Stories, Investigations, Local, Newsletter Top Stories, Randy Responds"},"prop30":"Los Angeles","prop18":"Randy Mac, Christine Roher","pageName":"investigations:detail content page","pageType":"","prop23":"article lead video embed ","eVar23":"article lead video embed ","prop19":"false","prop25":"Randy Mac, Christine Roher","eVar25":"D=c25"},"page_name":["investigations:detail","content","page"],"site_events":{},"division":"nbc","market":"KNBC","sitekey":"la","type":"post","network_id":"1:9:2749633","id":2749633,"source":"","title":"Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online","summary":"<p>Popular apps and websites, such as Facebook and Amazon, that many of us use all the time, are gathering a lot of information about us, and even sharing it with others. <\/p>\n","link":"https:\/\/www.nbclosangeles.com\/news\/local\/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online\/2749633\/","date":"November 5, 2021","subtitle":"But Kaplan says a quick privacy checkup will help protect some of your personal information.","sponsor":"","sst_source_id":"","linkout":"","linkout_url":"","syndicated":false,"nationalized":false,"linkout_excerpt_url":"","originating_market":"","content_tag":"randy-mac","section":"investigations","subsection":"","subsubsection":"","all_sections":"investigations|news|local|randy-responds","sponsored":false,"contentid":"10092749633","localid":"1:9:2749633","localid_combined":"10092749633","contenttitle":"Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online","contenttype":"article lead video embed ","syndicatedid":"1:9:2749633","byline_authors":"Randy Mac, Christine Roher","sourceid":"","pageName":"investigations:detail content page","collections":"Home Top Stories, Investigations, Local, Newsletter Top Stories, Randy Responds","uri":"\/news\/local\/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online\/2749633\/","uri_length":6,"section_name":"investigations","detail_section_name":"","detail_subsection_name":"","this_contenttype":"article lead video embed ","template":"article - general","this_request_type":"singular","video_collections":["Investigations","Investigations OTT","On Air","Randy Responds OTT"]},"browserTitle":"%s - NBC Los Angeles","pageType":"article","locale":"en_US","video":{"bitrate":50000,"playerType":"articleplayer","fwSSID":"ots_knbc_investigations","fwSSID_liveNoPre":"ots_live_nopreroll","fwNetworkID":"382114","fwManager":{"network":"_live","siteKey":""},"config":{"volume":100,"htmlPreRoll":true,"htmlOmniture":false,"tremorFlashKey":"52289094b872c","tremorFlashSyndKey":"5239b2feaee2e","tremorHTMLKey":"5239c44e7e9e1","tremorHTMLSyndKey":"5239c4849009"},"htmlOmniture":false,"pdkPath":"\/assets\/pdk587","plugins":["akamaiHD","FreeWheel","comscore","captions","capcon","liveCaptions","streamsense","chartbeat"]},"adobe":{"rsid":"nbcuotsdivisiontotal","link_internal_filters":"javascript:,nbclosangeles.com,media.nbclosangeles.com,events.nbclosangeles.com,tsn.nbclosangeles.com,autos.nbclosangeles.com"},"weather":{"weather_url":"https:\/\/www.nbclosangeles.com\/weather\/","alerts_url":"https:\/\/www.nbclosangeles.com\/weather\/severe-weather-alerts\/","closings_url":"https:\/\/www.nbclosangeles.com\/weather\/school-closings\/"},"sharethrough_codes":["nP3EagztciAhUuFBbE24BQsi"],"param_zipcode":"","appleStoreUrl":"https:\/\/ad.apps.fm\/S8cqfQtGcnVBGLHHNxm3j7mEqdAzHrteUpaQzsBej-2tvmO6B_Um9LVeCbDTxt7Dlmts_yvkswejq-LuNSpS8w","androidStoreUrl":"https:\/\/ad.apps.fm\/om4kDQlr3m8VfemF-TpyW15KLoEjTszcQMJsV6-2VnHFDLXitVHB6BlL95nuoNYfD4DN9cA_K7isGKodpGGvS55Ivfs5y3Fi2MKLEqwBJJDpEDH1cgSh2Y7P9LpcaHAAog2aV7rzdVJZF2M43pDGKA","facebookAppId":"61690781361"};</script><meta property="og:site_name" content="NBC Los Angeles" /><meta name="google-site-verification" content="sWoyPxGwXLtX91VCyKxKQiQ_kRCPHsj_VIIRq7VdZsw" /><meta property="fb:app_id" content="61690781361" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@nbcla" /><meta name="twitter:creator" content="@nbcla" /><meta property="og:type" content="article" /><meta property="article:opinion" content="false" /><meta property="article:content_tier" content="free" /><meta name="article:publisher" content="http://www.facebook.com/NBCLA" /><meta name="description" content="Popular apps and websites, such as Facebook and Amazon, that many of us use all the time, are gathering a lot of information about us, and even sharing it with..." /><meta property="og:description" content="Popular apps and websites, such as Facebook and Amazon, that many of us use all the time, are gathering a lot of information about us, and even sharing it with others." /><meta name="twitter:description" content="Popular apps and websites, such as Facebook and Amazon, that many of us use all the time, are gathering a lot of information about us, and even sharing it with others." /><meta property="og:title" content="Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online" /><meta name="twitter:title" content="Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online" /><meta name="keywords" content="Randy Mac" /><meta property="og:url" content="https://www.nbclosangeles.com/news/local/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online/2749633/" /><meta name="twitter:url" content="https://www.nbclosangeles.com/news/local/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online/2749633/" /><meta name="sailthru.title" content="Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online" /><meta name="sailthru.description" content="Popular apps and websites, such as Facebook and Amazon, that many of us use all the time, are gathering a lot of information about us, and even sharing it with..." /><meta name="sailthru.tags" content="Randy Mac" /><meta name="sailthru.tags" content="Randy Mac" /><meta name="sailthru.type" content="article" /><meta name="sailthru.date" content="2021-11-05T19:55:05+00:00" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="675" /><meta property="og:image" content="https://media.nbclosangeles.com/2021/03/online-privacy-1.jpg?quality=85&#038;strip=all&#038;resize=1200%2C675" /><meta name="twitter:image" content="https://media.nbclosangeles.com/2021/03/online-privacy-1.jpg?quality=85&#038;strip=all&#038;resize=1200%2C675" /><meta name="taboola_lead" content="video" /><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":"https:\/\/www.nbclosangeles.com\/news\/local\/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online\/2749633\/","headline":"Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online","datePublished":"2021-11-05T19:55:05","dateModified":"2021-11-05T19:55:13","description":"Popular apps and websites, such as Facebook and Amazon, that many of us use all the time, are gathering a lot of information about us, and even sharing it with\u2026","speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-headline",".article-subtitle"]},"keywords":"Randy Mac","publisher":{"@type":"Organization","name":"NBC Southern California","logo":{"@type":"ImageObject","height":60,"url":"https:\/\/media.nbclosangeles.com\/wp-content\/uploads\/2019\/09\/light_amp_knbc.png","width":160}},"image":{"@type":"ImageObject","height":675,"url":"https:\/\/media.nbclosangeles.com\/2021\/03\/online-privacy-1.jpg?quality=85&strip=all&resize=1200%2C675","width":1200},"video":{"@type":"VideoObject","contentUrl":"https:\/\/www.nbclosangeles.com\/news\/local\/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online\/2749633\/","description":"Popular apps and websites, such as Facebook and Amazon, that many of us use all the time, are gathering a lot of information about us, and even sharing it with others.","duration":"PT03M03S","name":"Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online","thumbnailUrl":"https:\/\/media.nbclosangeles.com\/2021\/03\/online-privacy-1.jpg?quality=85&strip=all&resize=1200%2C675","uploadDate":"2021-11-05T19:55:05"},"author":{"@type":"Person","name":"Randy Mac,Christine Roher"}}</script>							<script type='text/javascript'>
+				var dfpAdUnits = {};
+				var googletag = googletag || {};
+				googletag.cmd = googletag.cmd || [];
+				(function() {
+				var gads = document.createElement('script');
+				gads.async = true;
+				gads.type = 'text/javascript';
+				var useSSL = 'https:' == document.location.protocol;
+				gads.src = (useSSL ? 'https:' : 'http:') +
+				'//www.googletagservices.com/tag/js/gpt.js';
+				var node = document.getElementsByTagName('script')[0];
+				node.parentNode.insertBefore(gads, node);
+				})();
+				</script>
+												<script type="text/javascript">
+			var dfpBuiltMappings = {}, dfpAdUnits = {};
+
+			if (768 <= window.innerWidth) {									googletag.cmd.push(function() {
+					dfpBuiltMappings["bottombanner"] = googletag.sizeMapping().addSize([768,1],[[970,90],[970,66],[970,250],[728,90]]).build();
+dfpBuiltMappings["bottombox"] = googletag.sizeMapping().addSize([768,1],[[300,250],[300,600]]).build();
+dfpBuiltMappings["topbox"] = googletag.sizeMapping().addSize([768,1],[[300,250],[300,600]]).build();
+dfpBuiltMappings["topbanner"] = googletag.sizeMapping().addSize([768,1],[[970,90],[970,66],[970,250],[728,90]]).build();
+dfpBuiltMappings["logo"] = googletag.sizeMapping().addSize([768,1],[[88,31],[120,60]]).build();
+dfpBuiltMappings["interstitial"] = googletag.sizeMapping().addSize([768,1],[[1,1]]).build();
+dfpBuiltMappings["olympicsbox"] = googletag.sizeMapping().addSize([768,1],[[300,250]]).build();
+					});
+					var dfpAdDetails = {"topbox":{"path":"\/2620\/ots_web\/knbc\/investigations","sizes":[[300,250],[300,600]],"targeting":[]},"bottombox":{"path":"\/2620\/ots_web\/knbc\/investigations","sizes":[[300,250],[300,600]],"targeting":[]},"logo":{"path":"\/2620\/ots_web\/knbc\/investigations","sizes":[[88,31],[120,60]],"targeting":[]},"topbanner":{"path":"\/2620\/ots_web\/knbc\/investigations","sizes":[[970,90],[970,66],[970,250],[728,90]],"targeting":[]},"interstitial":{"path":"\/2620\/ots_web\/knbc\/investigations","sizes":[[1,1]],"targeting":[]},"bottombanner":{"path":"\/2620\/ots_web\/knbc\/investigations","sizes":[[970,90],[970,66],[970,250],[728,90]],"targeting":[]},"olympicsbox":{"path":"\/2620\/ots_web\/knbc\/investigations","sizes":[[300,250]],"targeting":[]}};
+					var dfpSizeMapping = {"bottombanner":[[[768,1],[[970,90],[970,66],[970,250],[728,90]]]],"bottombox":[[[768,1],[[300,250],[300,600]]]],"topbox":[[[768,1],[[300,250],[300,600]]]],"topbanner":[[[768,1],[[970,90],[970,66],[970,250],[728,90]]]],"logo":[[[768,1],[[88,31],[120,60]]]],"interstitial":[[[768,1],[[1,1]]]],"olympicsbox":[[[768,1],[[300,250]]]]};
+
+					 } else { 									googletag.cmd.push(function() {
+					dfpBuiltMappings["mobilemultibox"] = googletag.sizeMapping().addSize([1,1],[[300,250],[300,100],[320,50]]).build();
+dfpBuiltMappings["mobilebottombanner"] = googletag.sizeMapping().addSize([1,1],[[320,50],[300,100]]).build();
+dfpBuiltMappings["mobilebackstage"] = googletag.sizeMapping().addSize([1,1],[[1,1]]).build();
+dfpBuiltMappings["mobiletopbanner"] = googletag.sizeMapping().addSize([1,1],[[320,50],[300,100]]).build();
+dfpBuiltMappings["olympicsbox"] = googletag.sizeMapping().addSize([1,1],[[300,250]]).build();
+					});
+					var dfpAdDetails = {"mobilemultibox":{"path":"\/2620\/ots_mobile\/knbc_mobileweb\/investigations","sizes":[[300,250],[300,100],[320,50]],"targeting":[]},"mobilebackstage":{"path":"\/2620\/ots_mobile\/knbc_mobileweb\/investigations","sizes":[[1,1]],"targeting":[]},"mobilebottombanner":{"path":"\/2620\/ots_mobile\/knbc_mobileweb\/investigations","sizes":[[320,50],[300,100]],"targeting":[]},"mobiletopbanner":{"path":"\/2620\/ots_mobile\/knbc_mobileweb\/investigations","sizes":[[320,50],[300,100]],"targeting":[]},"olympicsbox":{"path":"\/2620\/ots_mobile\/knbc_mobileweb\/investigations","sizes":[[300,250]],"targeting":[]}};
+					var dfpSizeMapping = {"mobilemultibox":[[[1,1],[[300,250],[300,100],[320,50]]]],"mobilebottombanner":[[[1,1],[[320,50],[300,100]]]],"mobilebackstage":[[[1,1],[[1,1]]]],"mobiletopbanner":[[[1,1],[[320,50],[300,100]]]],"olympicsbox":[[[1,1],[[300,250]]]]};
+
+													}					googletag.cmd.push(function() {
+					googletag.pubads().enableAsyncRendering();
+googletag.pubads().collapseEmptyDivs();
+					googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+						var slotElementId = event.slot.getSlotElementId();
+						if (false === event.isEmpty) {
+							if (0 <= slotElementId.indexOf('topbanner')) {
+								document.body.classList.add("topbanner");
+							}
+							if (0 <= slotElementId.indexOf('logo')) {
+								document.querySelector('#' + slotElementId).classList.add('logo-rendered');
+							} else {
+								document.querySelector('#' + slotElementId).classList.add('ad-rendered');
+							}
+						}
+					});
+						googletag.pubads().setTargeting("zipcode", localStorage.getItem("zipCode") || nbc.zipCode );
+
+	var isMobile = window.matchMedia('screen and (max-width: 767px)').matches;
+	googletag.pubads().setTargeting("gpt1", isMobile ? "ots_mobile" : "ots_web");
+	googletag.pubads().setTargeting("platform", isMobile ? "mobile" : "desktop");
+			googletag.pubads().setTargeting("source", "www.nbclosangeles.com");
+				googletag.pubads().setTargeting("pageid", "10092749633");
+				googletag.pubads().setTargeting("pageid2", "10092749633");
+				googletag.pubads().setTargeting("sect", "investigations");
+				googletag.pubads().setTargeting("sub", "");
+				googletag.pubads().setTargeting("call", "KNBC");
+				googletag.pubads().setTargeting("region", "losangeles");
+				googletag.pubads().setTargeting("stationtype", "nbc");
+				googletag.pubads().setTargeting("tags", "investigations,news,local,randy-responds,randy-mac");
+				googletag.pubads().setTargeting("gpt2", "KNBC");
+				googletag.pubads().setTargeting("station", "ots");
+				googletag.pubads().setTargeting("sponsor", "");
+				googletag.pubads().setTargeting("excl_cat", "investigations");
+		
+					googletag.enableServices();
+				});
+								var dfpAdLayer = {"post_id":2226187,"title":"Article Ad Layer"};
+
+			</script>
+			<link rel="amphtml" href="https://www.nbclosangeles.com/news/local/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online/2749633/?amp"><link rel="icon" href="https://media.nbclosangeles.com/2019/09/cropped-NBC_LA.png?fit=32%2C32&#038;quality=85&#038;strip=all" sizes="32x32" />
+<link rel="icon" href="https://media.nbclosangeles.com/2019/09/cropped-NBC_LA.png?fit=192%2C192&#038;quality=85&#038;strip=all" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://media.nbclosangeles.com/2019/09/cropped-NBC_LA.png?fit=180%2C180&#038;quality=85&#038;strip=all" />
+<meta name="msapplication-TileImage" content="https://media.nbclosangeles.com/2019/09/cropped-NBC_LA.png?fit=270%2C270&#038;quality=85&#038;strip=all" />
+</head>
+
+<body class="post-template-default single single-post postid-2749633 single-format-standard station-nbc knbc has-featured-image short-hero">
+	<div class="leaderboard_ad">
+		<div id="div-gpt-ad-topbanner_" class=" gpt-topbanner" data-beforetext="" data-fallbacktext=""></div><script style="text/javascript">
+				if (typeof adInstance === 'undefined') {
+					adInstance = new AdLayersAPI();
+				}
+				adInstance.lazyLoadAd({ slotName: 'topbanner_', format: 'topbanner', targeting: {"slot":"topbanner","pos":"topbanner"} });
+			</script><div id="div-gpt-ad-mobiletopbanner_" class=" gpt-mobiletopbanner" data-beforetext="" data-fallbacktext=""></div><script style="text/javascript">
+				if (typeof adInstance === 'undefined') {
+					adInstance = new AdLayersAPI();
+				}
+				adInstance.lazyLoadAd({ slotName: 'mobiletopbanner_', format: 'mobiletopbanner', targeting: {"slot":"mobiletopbanner","pos":"mobiletopbanner"} });
+			</script>	</div>
+	<div id="page" class="site" data-component="wrapper">
+	
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header id="masthead" class="site-header" role="banner" data-component="siteHeader">
+		<div class="site-header__primary">
+		<div class="site-header__wrap">
+							<div class="site-header__logo">
+					<a href="https://www.nbclosangeles.com/">
+						<img src="https://media.nbclosangeles.com/2021/04/Los-Angeles.png?fit=177%2C120&#038;quality=85&#038;strip=all&#038;w=59&#038;h=40" srcset="https://media.nbclosangeles.com/2021/04/Los-Angeles.png?fit=177%2C120&amp;quality=85&amp;strip=all&amp;w=59&amp;h=40 1x, https://media.nbclosangeles.com/2021/04/Los-Angeles.png?fit=177%2C120&amp;quality=85&amp;strip=all&amp;w=118&amp;h=80 2x, https://media.nbclosangeles.com/2021/04/Los-Angeles.png?fit=177%2C120&amp;quality=85&amp;strip=all&amp;w=177&amp;h=120 3x" alt="NBC Los Angeles" height="40" width="59" />					</a>
+				</div>
+						<div class="site-header__nav-search">
+				<div class="site-header__nav-main">
+					<button class="site-header__nav-main-toggle">
+						<span class="site-header__nav-main-toggle-text">Main Navigation</span>
+					</button>
+				</div>
+				<div class="site-header__search" data-component="headerSearch">
+					<button class="site-header__search-toggle">
+						<span class="site-header__search-toggle-text">Search</span>
+					</button>
+					<div class="site-header__search-form">
+						
+<form class="search-form" role="search" method="get" action="https://www.nbclosangeles.com/" >
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" value="" name="s" placeholder="Search" />
+	</label>
+	<input type="submit" class="search-submit" value="Search" />
+</form>
+					</div>
+				</div>
+			</div>
+			<div class="site-header__animated-section">
+				<nav class="site-header__nav-sections">
+					<div class="menu-primary-container"><nav id="primary-menu" class="menu"><a data-lid="Local" data-lpos="primary-menu" class=" menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent" href="/news/local/">Local</a></li>
+<a data-lid="U.S. &amp; World" data-lpos="primary-menu" class=" menu-item menu-item-type-taxonomy menu-item-object-category" href="/news/national-international/">U.S. &amp; World</a></li>
+<a data-lid="Weather" data-lpos="primary-menu" class=" menu-item menu-item-type-custom menu-item-object-custom" href="/weather/">Weather</a></li>
+<a data-lid="Entertainment" data-lpos="primary-menu" class=" menu-item menu-item-type-taxonomy menu-item-object-category" href="/entertainment/">Entertainment</a></li>
+<a data-lid="Sports" data-lpos="primary-menu" class=" menu-item menu-item-type-taxonomy menu-item-object-category" href="/news/sports/">Sports</a></li>
+<a data-lid="Newsletters" data-lpos="primary-menu" class=" menu-item menu-item-type-custom menu-item-object-custom" href="https://www.nbclosangeles.com/newsletters/">Newsletters</a></li>
+</nav></div>				</nav>
+				<div class="site-header__weather-tv">
+					<div
+						class="site-header__local-weather"
+						data-react-component="NBCWeather"
+						data-view="conditions"
+					>
+					</div>
+										<a class="site-header__live-tv" href="https://www.nbclosangeles.com/live">Live TV</a>
+									</div>
+				<button class="site-header__mobile-share-toggle">
+					<span class="text-share">Share</span>
+					<span class="text-close">Close</span>
+				</button>
+			</div>
+		</div> <!-- site-header__wrap -->
+	</div> <!-- site-header__primary -->
+	<div class="site-header__secondary">
+		<div class="site-header__wrap">
+							<div class="site-header__trending">
+					<span class="site-header__trending-label">Trending</span>
+											<nav class="site-header__trending-nav">
+												<a data-lid="Weekend" data-lpos="trending-stories-module" href="https://www.nbclosangeles.com/the-scene/weekend-the-los-angeles-marathon-returns/2747813/" class="site-header__trending-nav-item">Weekend</a>
+					<a data-lid="LA Marathon Map" data-lpos="trending-stories-module" href="https://www.nbclosangeles.com/news/local/map-2021-la-marathon-route-course-schedule/2748948/" class="site-header__trending-nav-item">LA Marathon Map</a>
+					<a data-lid="101 Freeway" data-lpos="trending-stories-module" href="https://www.nbclosangeles.com/traffic/sixth-street-viaduct-bridge-downtown-la-boyle-heights-101-freeway/2724122/" class="site-header__trending-nav-item">101 Freeway</a>
+					<a data-lid="Jet Pack Man" data-lpos="trending-stories-module" href="https://www.nbclosangeles.com/investigations/pictures-reveal-what-jet-pack-man-in-sky-near-lax-might-be-and-its-really-not-what-youd-expect/2742742/?customize_changeset_uuid=59cff749-2914-4aa8-ac04-6e5cad66673a&#038;customize_autosaved=on" class="site-header__trending-nav-item">Jet Pack Man</a>
+					<a data-lid="The Challenge" data-lpos="trending-stories-module" href="https://www.nbclosangeles.com/news/sports/the-challenge-register-play-2021/2425810/" class="site-header__trending-nav-item">The Challenge</a>
+					<a data-lid="I-Team Tips" data-lpos="trending-stories-module" href="https://www.nbclosangeles.com/investigations/submit-tip/" class="site-header__trending-nav-item">I-Team Tips</a>
+		
+							</nav>
+										<div class="site-header__trending-toggle">
+						<button class="trending-toggle"><span class="screen-reader-text">Expand</span></button>
+					</div>
+				</div>
+
+				
+<div class="site-header__alerts">
+	<div
+		class="site-header__weather "
+		data-react-component="NBCWeather"
+		data-view="alerts"
+		data-alert-singular="Weather Alert"
+		data-alert-plural="Weather Alerts"
+		data-zip-code="90012">
+	</div>
+	</div> <!-- site-header__wrap -->
+					</div> <!-- site-header__secondary -->
+	</div>
+</header>
+	<div id="content" class="site-content " data-component="formsContainer">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main">
+				<article id="post-2749633" data-component="article">
+
+	<div
+			id="template-hero"
+		class="template-hero "
+		data-component="templateHero"
+	>
+			<div class="hero-background"></div>
+	
+	
+	
+					
+	
+	
+	
+	
+	
+	
+	</div>
+		<div class="section-content--header below-hero">
+		<div class="article-eyebrow__container">
+	<div class="article-eyebrow__wrap">
+									<a class="article-eyebrow" href="https://www.nbclosangeles.com/tag/randy-mac/">Randy Mac</a>						</div>
+</div>
+<div class="article-header--wrap ">
+	<h1 class="article-headline">
+		Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online	</h1>
+			<h2 class="article-subtitle">
+			But Kaplan says a quick privacy checkup will help protect some of your personal information.		</h2>
+				
+<div class="article-meta" data-component="articleMeta">
+	<h4 class="article-byline">
+					By <a href="https://www.nbclosangeles.com?s=Author%3A%20%22Randy%20Mac%22">Randy Mac</a> and Christine Roher							<span class="meta-dot">&bull;</span>
+					
+							<span class="time-wrap">
+				<time class="entry-date published" datetime="2021-11-06T02:55:05-07:00">Published November 5, 2021</time>					<span class="meta-dot">&bull;</span>
+				<time class="entry-date updated" datetime="2021-11-05T19:55:13-07:00">Updated on <span class="date">November 5, 2021</span> at <span class="time">7:55 pm</span></time>			</span>
+			</h4>
+	<div
+	class="share-buttons"
+	data-component="sharingBar"
+>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.nbclosangeles.com%2Fnews%2Flocal%2Fprivacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online%2F2749633%2F&#038;Privacy%20Expert%20Suggests%20Doing%20This%20to%20Help%20Protect%20Your%20Personal%20Information%20Online?_osource=db_npd_nbc_knbc_fb_shr" data-service="facebook" target="_blank">
+			<span class="icon icon-facebook-f"></span>
+		</a>
+	
+			<a href="https://twitter.com/intent/tweet?text=Privacy%20Expert%20Suggests%20Doing%20This%20to%20Help%20Protect%20Your%20Personal%20Information%20Online&#038;url=https%3A%2F%2Fwww.nbclosangeles.com%2Fnews%2Flocal%2Fprivacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online%2F2749633%2F?_osource=db_npd_nbc_knbc_twt_shr" data-service="twitter" target="_blank">
+			<span class="icon icon-twitter"></span>
+		</a>
+	
+			<a href="mailto:?body=Privacy%20Expert%20Suggests%20Doing%20This%20to%20Help%20Protect%20Your%20Personal%20Information%20Online%0D%0A%0D%0Ahttps%3A%2F%2Fwww.nbclosangeles.com%2Fnews%2Flocal%2Fprivacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online%2F2749633%2F?_osource=db_npd_nbc_knbc_eml_shr" data-service="email" target="_blank">
+			<span class="icon icon-envelope"></span>
+		</a>
+	
+	</div>
+</div>
+		</div>
+	</div>
+		<div class="section-content--full below-hero">
+		<div class="section-content--primary">
+			<div class="article-content--wrap">
+				<div class="video-flyout" data-component="videoFlyout">
+	<figure class="article-featured-media video-lead">
+		<div
+			data-react-component="VideoPlayer"
+		data-meta="{&quot;amp_status&quot;:&quot;&quot;,&quot;spay_email&quot;:&quot;&quot;,&quot;syndicated_id&quot;:&quot;&quot;,&quot;should_nationalize&quot;:false,&quot;nbc_first_published_date&quot;:&quot;&quot;,&quot;nbc_prevent_modified_update&quot;:false,&quot;nbc_linkout_title&quot;:&quot;&quot;,&quot;nbc_linkout_url&quot;:&quot;&quot;,&quot;nbc_linkout_excerpt_link&quot;:&quot;&quot;,&quot;nbc_primary_category_id&quot;:0,&quot;nbc_primary_tag_id&quot;:0,&quot;nbc_social_page_title&quot;:&quot;&quot;,&quot;nbc_page_title&quot;:&quot;&quot;,&quot;nbc_seo_description&quot;:&quot;&quot;,&quot;nbc_social_description&quot;:&quot;&quot;,&quot;nbc_national_headline&quot;:&quot;&quot;,&quot;entities&quot;:&quot;&quot;,&quot;nbc_canonical_market&quot;:&quot;&quot;,&quot;nbc_canonical_url&quot;:&quot;&quot;,&quot;nbc_hide_from_recirculation&quot;:&quot;&quot;,&quot;nbc_hide_from_search&quot;:&quot;&quot;,&quot;nbc_syndication_category&quot;:&quot;&quot;,&quot;nbc_national_collections&quot;:[],&quot;nopreroll&quot;:false,&quot;video_copyright&quot;:&quot;NBC Universal, Inc.&quot;,&quot;sst_source_id&quot;:&quot;&quot;,&quot;nbc_disable_legacy_embeds&quot;:false,&quot;nbc_feed_loader_prevent_updates&quot;:&quot;&quot;,&quot;post_video_prompt&quot;:&quot;&quot;,&quot;nbc_checkout_experience_enabled&quot;:false,&quot;desktopFlashPid&quot;:&quot;&quot;,&quot;mpx_dfxp_url&quot;:&quot;https:\/\/media.nbcmiami.com\/assets\/video\/NBCU_LM_VMS_-_KNBC\/170\/475\/13087054129.dfxp&quot;,&quot;mp4_url&quot;:&quot;http:\/\/nbclim-download.edgesuite.net\/Prod\/NBCU_LM_VMS_-_KNBC\/170\/475\/13087054129-1080pnbcstations.mp4&quot;,&quot;mpx_download_pid&quot;:&quot;d52pIvpURRiU&quot;,&quot;mpx_download_pid_high&quot;:&quot;rt7KZWaJSrtd&quot;,&quot;mpx_high_id&quot;:&quot;&quot;,&quot;mpx_high_url&quot;:&quot;&quot;,&quot;mpx_is_livestream&quot;:&quot;&quot;,&quot;mpx_m3upid&quot;:&quot;&quot;,&quot;mpx_pid&quot;:&quot;eQyb_KfNeuSj&quot;,&quot;mpx_thumbnail_url&quot;:&quot;https:\/\/media.nbclosangeles.com\/2021\/11\/13087054129-1080pnbcstations.jpg?quality=85&amp;strip=all&amp;resize=850%2C478&quot;,&quot;pid_streaming_web_high&quot;:&quot;tP7nkKK9Uswy&quot;,&quot;pid_streaming_web_medium&quot;:&quot;9kQfLeMiCe9o&quot;,&quot;subtitle&quot;:&quot;&quot;,&quot;dfxp_url&quot;:&quot;&quot;,&quot;video_call_letter&quot;:&quot;KNBC&quot;,&quot;video_captions&quot;:&quot;&gt;&gt;&gt; IT\u2019S SOMETHING THAT HAPPENS &gt;&gt;&gt; IT\u2019S SOMETHING THAT HAPPENS ALL THE TIME AND YOU MIGHT NOT EVEN KNOW IT. POPULAR SITES LIKE FACEBOOK AND POPULAR SITES LIKE FACEBOOK AND AMAZON ARE GATHERING INFORMATION OUT MORE THAN YOU MIGHT REALIZE AND THEY\u2019RE SHARING IT WITH OTHER CUSTOMERS. OUR COULDN\u2019T SUPER INVESTIGATOR RANDY MACK HAD THE CHANCE TO TALK WITH A PRIVACY EXPERT ABOUT TALK WITH A PRIVACY EXPERT ABOUT SOME OF THE SETTINGS YOU CAN USE TO PROTECT YOUR PERSONAL INFORMATION. &gt;&gt; Reporter: FACEBOOK, AMAZON, VENMO, GOOGLE. THOSE ARE THE BIGGIES. THE ONES MANY OF US ARE USING THE ONES MANY OF US ARE USING MOST OF THE TIME AND THE ONES GOBBLING UP OUR DATA AND SHARING IT. &gt;&gt; IN MOST CASES, YOU\u2019RE MAKING ALL OF YOUR INFORMATION PUBLIC IN ONE WAY OR ANOTHER. YOU\u2019RE MAKING IT SO EASY TO PEOPLE TO KNOW SO MUCH ABOUT YOU. &gt;&gt; Reporter: SHE SAYS A QUICK PROIFCY CHECK-UP WILL HELP PROTECT SOME OF YOUR PERSONAL INFORMATION. LET\u2019S GET STARTED WITH AMAZON. LET\u2019S GET STARTED WITH AMAZON. IF YOU HAVE A WISH LIST, SHE SAYS IT DEFAULTS TO A PUBLIC SETTING MEANING ANYBODY CAN SEE SETTING MEANING ANYBODY CAN SEE WHAT\u2019S ON IT. YIKES! A QUICK FIX. SET IT TO PRIVATE. NOW YOUR BROWSING AND PURCHASE HISTORY ARE PUBLIC. IF YOU SHARE YOUR ACCOUNT WITH FAMILY, THEY CAN SEE IT ALL. &gt;&gt; YOU\u2019RE SHARING AN ACCOUNT AND YOU\u2019VE ORDERED SOMEONE YOU DON\u2019T WANT YOUR FAMILY TO KNOW. WANT YOUR FAMILY TO KNOW. LET\u2019S SAY A BIRTHDAY GIFT YOUABLE AND TO KEEP A SURPRISE FROM THEM. THERE IS A WAY TO HIDE THAT. THERE IS A WAY TO HIDE THAT. &gt;&gt; Reporter: FOR VENMO USERS, THE DEFAULT IS PUBLIC. MEANING PEOPLE CAN SEE EVERYONE YOU\u2019RE PAYING AND WHEN. IF YOU WANT TO KEEP THOSE PAYMENTS TO YOUR THERAPIST PAYMENTS TO YOUR THERAPIST PRIVATE, YOU NEED TO CHANGE YOUR SETTINGSFUL YOU\u2019LL WANT TO HIDE YOUR PAST TRANSACTIONS AND YOUR CONTACTS. IF YOU\u2019RE NOT SURE WHICH ONE TO USE, SHE PREFERS ZELLE. &gt;&gt; THERE\u2019S NO FRIENDS LIST. TO ME IT FEELS MUCH MORE SECURE. &gt;&gt; Reporter: AS FOR FACEBOOK, &gt;&gt; Reporter: AS FOR FACEBOOK, YOU MAY HAVE NOTICED THAT ADS POP UP BASED ON WHAT YOU\u2019RE SEARCHING FOR ONLINE. SEARCHING FOR ONLINE. YOU CAN STOP IT BY TWEAKING YOUR SETTINGS. ANOTHER TWEAK SHE SUGGESTS, DON\u2019T LET PEOPLE TAG YOU IN DON\u2019T LET PEOPLE TAG YOU IN POSTS OR PICTURES WITHOUT YOUR APPROVAL. AND WHATEVER CHANGES YOU MAKE TO YOUR FACEBOOK SETTINGS, BE SURE YOUR FACEBOOK SETTINGS, BE SURE TO CHECK ON THEM OFTEN. &gt;&gt; I CAN WRITE AN ARTICLE THAT TELLS YOU HOW STEP BY STEP TO GO THROUGH THE FACEBOOK SETTINGS. THREE DAYS FROM NOW, TEN DAYS FROM NOW, AIER NOW IT WILL BE VERY DIFFERENT. VERY DIFFERENT. &gt;&gt; Reporter: OVER AT GOOGLE THEY MIGHT KNOW THE MOST ABOUT YOU. SHE SUGGESTS YOU DON\u2019T ALLOW THEM TO TRACK YOUR BROWSING THEM TO TRACK YOUR BROWSING HISTORY. KNOW HOW SOME ALLOW YOU TO LOG IN USING YOUR GOOGLE OR FACEBOOK ACCOUNT, SHE SAYS DON\u2019T DO IT. THAT JUST GIVES THEM MORE INFORMATION ABOUT YOU. &gt;&gt; EDUCATION IS YOUR BEST &gt;&gt; EDUCATION IS YOUR BEST AMMUNITION. ONCE YOU SAY I CARE ABOUT PRIVACY AND YOU START EDUCATING YOURSELF, YOU CAN ACHIEVE A YOURSELF, YOU CAN ACHIEVE A PRETTY DECENT LEVEL FOR YOURSELF. &gt;&gt; Reporter: THIS IS JUST THE TIM OF THE ICEBERG. TIM OF THE ICEBERG. THE GOOD NEWS IS THAT CAPLAND HAS OUTLINED FOR YOU STEP BY HAS OUTLINED FOR YOU STEP BY STEP HOW YOU CAN MAKE THESE ADJUSTMENTS. YOU CAN FIND HER GUIDE AT&quot;,&quot;video_id&quot;:&quot;1971567683965_905&quot;,&quot;video_length&quot;:&quot;183584&quot;,&quot;video_provider&quot;:&quot;mpx&quot;,&quot;short_video_excerpt&quot;:&quot;&quot;,&quot;mpx_download_pid_mobile_low&quot;:&quot;bb0wxhxM7GYr&quot;,&quot;pid_streaming_web_mobile_low&quot;:&quot;&quot;,&quot;mpx_download_pid_mobile_standard&quot;:&quot;dH08YyoF9rzK&quot;,&quot;pid_streaming_mobile_standard&quot;:&quot;eQyb_KfNeuSj&quot;,&quot;alleypack_schedule_unpublish&quot;:&quot;&quot;,&quot;feed_remote_id&quot;:&quot;mpx_1971567683965&quot;,&quot;feed_thumbnail_url&quot;:&quot;&quot;}"
+	data-livestream="false"
+	data-title="Here&#039;s How to Adjust Your Privacy Settings Online"
+	data-vidcid="1:9:2749635"
+	data-vidurl="https://www.nbclosangeles.com/news/local/heres-how-to-adjust-your-privacy-settings-online/2749635/"
+			data-islead="true"
+		data-catnames="{&quot;757727&quot;:&quot;Investigations&quot;,&quot;756756&quot;:&quot;News&quot;,&quot;505&quot;:&quot;Local&quot;,&quot;759974&quot;:&quot;On Air&quot;,&quot;2454&quot;:&quot;Randy Responds&quot;}"
+	data-tagnames="{&quot;872058&quot;:&quot;Randy Mac&quot;}"
+	data-customdata="{&quot;ContentPartner&quot;:&quot;None&quot;,&quot;Source&quot;:&quot;WEBFM&quot;,&quot;SyndicationAllowed&quot;:&quot;true&quot;,&quot;mSNVideoCategories&quot;:&quot;MSN Video v4 Connector-most watched news&quot;,&quot;mSNVideoContentSupplierID&quot;:&quot;NBC_Local&quot;,&quot;mSNVideoCountry&quot;:&quot;us&quot;,&quot;subtitle&quot;:&quot;nosubtitle&quot;,&quot;uploadedByTeam&quot;:&quot;1&quot;,&quot;youtubeChannel&quot;:&quot;None&quot;}"
+			data-autoplay="true"
+				data-cplay="true"
+	></div>
+			<figcaption>
+									<cite>NBC Universal, Inc.</cite>
+				
+															<div
+							class="caption"
+							data-react-component="NBCTruncate"
+							data-maxlines="2"
+							data-maxlinesmobile="4"
+							data-readmore="Read more"
+							data-text="&lt;p&gt;Randy Mac explains on Thursday, Nov. 4, 2021.&lt;/p&gt;
+"
+							data-ellipsis="false">
+						</div>
+												</figcaption>
+						<button class="video-flyout__dismiss"><span class="icon icon-times"></span></button>
+			</figure>
+</div>
+				<div class="article-content rich-text">
+					
+					
+<p>Popular apps and websites, such as Facebook and Amazon, that many of us use all the time, are gathering a lot of information about us, and even sharing it with others. </p>
+
+<p>So the NBC4 I-Team talked to a privacy expert about the settings you might want to have in place to keep your personal information as private as possible. </p>
+<div class="mobile-app-promotion">
+	
+<div class="wp-block-nbc-localized-block">
+<blockquote class="featured-text">
+	<strong><em>Our redesigned local news and weather app is live! Download it for</em></strong> <a href="https://apps.apple.com/us/app/nbc4-southern-california/id331806276">iOS</a> or <a href="https://play.google.com/store/apps/details?id=com.nbcuni.nbcots.nbclosangeles.android&amp;hl=en_US&amp;gl=US">Android</a> <strong><em>— and sign up for alerts</em></strong>. </blockquote>
+</div>
+</div>
+
+<p>Facebook, Amazon, Venmo and Google. Those are the apps and websites that most of us are using, and those are the ones gobbling up our data.&nbsp;</p>
+
+<p>“In most cases you’re just making all of your information public in one way or another,” said online privacy expert Hayley Kaplan. “You’re making it so easy for people to know so much about you.”</p>
+<div class="recirc-module">
+	<h3 class="recirc__heading">Local</h3>
+	<p class="recirc__subheading">Local news from across Southern California</p>
+					<div class="recirc__post">
+			<div class="post__wrap">
+				<div class="post__image-wrapper">
+											<a data-lpos="inline-recirc-module" data-lid="No-Burn Order Extended Through Sunday Night in Many Parts of SoCal" href="https://www.nbclosangeles.com/news/local/no-burn-order-extended-through-sunday-night-in-many-parts-of-socal/2750432/?amp">
+							<img class="post__image" srcset="https://media.nbclosangeles.com/2021/11/GettyImages-540009387-e1636147580697.jpg?quality=85&amp;strip=all&amp;resize=200%2C113 200w, https://media.nbclosangeles.com/2021/11/GettyImages-540009387-e1636147580697.jpg?quality=85&amp;strip=all&amp;resize=400%2C225 400w, https://media.nbclosangeles.com/2021/11/GettyImages-540009387-e1636147580697.jpg?quality=85&amp;strip=all&amp;resize=600%2C338 600w, " src="https://media.nbclosangeles.com/2021/11/GettyImages-540009387-e1636147580697.jpg?quality=85&#038;strip=all&#038;resize=600%2C338" alt="" sizes="200px" loading="lazy" />
+						</a>
+
+						
+															</div>
+
+				<div class="post__text">
+					<div class="post__meta">
+													<a data-lpos="inline-recirc-module" data-lid="Air Quality" class="post__tag" href="https://www.nbclosangeles.com/tag/air-quality/">Air Quality</a>
+																			<span class="post__date post__date--has-category">
+								5 mins ago							</span>
+											</div>
+
+											<h3 class="post__title">
+							<a data-lpos="inline-recirc-module" data-lid="No-Burn Order Extended Through Sunday Night in Many Parts of SoCal" class="post__title--link" href="https://www.nbclosangeles.com/news/local/no-burn-order-extended-through-sunday-night-in-many-parts-of-socal/2750432/?amp">
+								No-Burn Order Extended Through Sunday Night in Many Parts of SoCal							</a>
+						</h3>
+									</div>
+			</div>
+		</div>
+					<div class="recirc__post">
+			<div class="post__wrap">
+				<div class="post__image-wrapper">
+											<a data-lpos="inline-recirc-module" data-lid="Four Los Angeles County Men Among 34 Arrested in SB County Marijuana Busts" href="https://www.nbclosangeles.com/news/local/four-los-angeles-county-men-among-34-arrested-in-sb-county-marijuana-busts/2750398/?amp">
+							<img class="post__image" srcset="https://media.nbclosangeles.com/2021/10/GettyImages-1333288160.jpg?quality=85&amp;strip=all&amp;resize=200%2C113 200w, https://media.nbclosangeles.com/2021/10/GettyImages-1333288160.jpg?quality=85&amp;strip=all&amp;resize=400%2C225 400w, https://media.nbclosangeles.com/2021/10/GettyImages-1333288160.jpg?quality=85&amp;strip=all&amp;resize=600%2C338 600w, " src="https://media.nbclosangeles.com/2021/10/GettyImages-1333288160.jpg?quality=85&#038;strip=all&#038;resize=600%2C338" alt="" sizes="200px" loading="lazy" />
+						</a>
+
+						
+															</div>
+
+				<div class="post__text">
+					<div class="post__meta">
+													<a data-lpos="inline-recirc-module" data-lid="marijuana" class="post__tag" href="https://www.nbclosangeles.com/tag/marijuana/">marijuana</a>
+																			<span class="post__date post__date--has-category">
+								58 mins ago							</span>
+											</div>
+
+											<h3 class="post__title">
+							<a data-lpos="inline-recirc-module" data-lid="Four Los Angeles County Men Among 34 Arrested in SB County Marijuana Busts" class="post__title--link" href="https://www.nbclosangeles.com/news/local/four-los-angeles-county-men-among-34-arrested-in-sb-county-marijuana-busts/2750398/?amp">
+								Four Los Angeles County Men Among 34 Arrested in SB County Marijuana Busts							</a>
+						</h3>
+									</div>
+			</div>
+		</div>
+	</div>
+
+<p>But Kaplan says a quick privacy checkup will help protect some of your personal information.&nbsp;</p>
+
+<p>Let’s start with Amazon. If you have a wish list, Kaplan says it defaults to a public setting, meaning anybody can see what’s on it. The quick fix: set it to private.</p>
+
+<p>Now, your browsing and purchase history aren’t public. But if you share your account with your family, they can see it all.&nbsp;</p>
+
+<p>“Let’s just say you’re sharing the account and you’ve ordered something you don’t want someone in your family to know, let’s say a birthday gift you want to keep a surprise for them. There is a way to hide that,” said Kaplan.</p>
+
+<p>Here are tips for keeping your&nbsp;<a href="https://what-is-privacy.com/2021/10/how-to-achieve-amazon-privacy/">Amazon account private</a>.</p>
+
+<p>For Venmo users, the default setting is public, meaning people can see everyone you’re paying and when. If you want to keep those payments to your therapist private, then you need to adjust your settings. Kaplan says you’ll also want to hide your past transactions and your contacts.&nbsp;</p>
+
+<p>Here are tips for adjusting your&nbsp;<a href="https://what-is-privacy.com/2021/10/how-to-check-and-set-venmo-privacy-settings/">Venmo privacy settings</a>.</p>
+
+<p>And if you’re not sure which cash app to use, Kaplan prefers Zelle.</p>
+
+<p>“It’s highly encrypted, there’s no sharing, there’s no ‘friends list’ within the app,” said Kaplan. “To me it just feels much more secure than Venmo.”</p>
+
+<p>As for Facebook, you may have noticed that ads pop up based on what you’re searching for online. You can stop the social media giant from targeting ads at you by tweaking your settings.&nbsp;</p>
+
+<p>Another settings tweak that Kaplan suggests: don’t let people tag you in posts or pictures without your approval.&nbsp;</p>
+
+<p>And whatever changes you make to your Facebook settings, be sure to check them often.&nbsp;</p>
+
+<p>“I can write an article that goes step by step through Facebook settings, and three days from now, 10 days from now, a year from now, it could be very different,” said Kaplan.</p>
+
+<p>Here’s where you can&nbsp;<a href="https://www.facebook.com/about/basics/manage-your-privacy">manage your Facebook privacy</a>. And you can also do a&nbsp;<a href="https://www.facebook.com/privacy/checkup/?source=settings">Facebook privacy checkup</a>.&nbsp;&nbsp;</p>
+
+<p>Over on Google, they just might know the most about you. Kaplan suggests you don’t allow the tech giant to track your browsing history. Here’s how to access and&nbsp;<a href="https://what-is-privacy.com/2021/10/how-to-access-and-change-your-google-privacy-settings/">change your Google privacy settings</a>.&nbsp;</p>
+
+<p>Kaplan can also walk you through how to&nbsp;<a href="https://what-is-privacy.com/2020/10/how-to-blur-your-home-on-google-maps/">blur your home on Google maps</a>.&nbsp;</p>
+
+<p>Finally, some sites allow you to log in using your Google or Facebook account, but Kaplan says don’t do it, because that just gives the companies even more information about you.&nbsp;</p>
+
+<p>“Education is the best ammunition you can have,” said Kaplan. “Once you’ve decided that you care about privacy and start educating yourself, you can achieve a pretty decent level for yourself.”</p>
+
+									</div>
+								<div class="article-footer">
+			<div class="article-tags">
+	<h4 class="article-tags__heading">This article tagged under:</h4>
+	<a class="article-tags__tag" href="https://www.nbclosangeles.com/tag/randy-mac/">Randy Mac</a></div>
+			<div
+	class="share-buttons"
+	data-component="sharingBar"
+>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.nbclosangeles.com%2Fnews%2Flocal%2Fprivacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online%2F2749633%2F&#038;Privacy%20Expert%20Suggests%20Doing%20This%20to%20Help%20Protect%20Your%20Personal%20Information%20Online?_osource=db_npd_nbc_knbc_fb_shr" data-service="facebook" target="_blank">
+			<span class="icon icon-facebook-f"></span>
+		</a>
+	
+			<a href="https://twitter.com/intent/tweet?text=Privacy%20Expert%20Suggests%20Doing%20This%20to%20Help%20Protect%20Your%20Personal%20Information%20Online&#038;url=https%3A%2F%2Fwww.nbclosangeles.com%2Fnews%2Flocal%2Fprivacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online%2F2749633%2F?_osource=db_npd_nbc_knbc_twt_shr" data-service="twitter" target="_blank">
+			<span class="icon icon-twitter"></span>
+		</a>
+	
+			<a href="mailto:?body=Privacy%20Expert%20Suggests%20Doing%20This%20to%20Help%20Protect%20Your%20Personal%20Information%20Online%0D%0A%0D%0Ahttps%3A%2F%2Fwww.nbclosangeles.com%2Fnews%2Flocal%2Fprivacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online%2F2749633%2F?_osource=db_npd_nbc_knbc_eml_shr" data-service="email" target="_blank">
+			<span class="icon icon-envelope"></span>
+		</a>
+	
+			<a href="#" data-service="comments">
+			<span class="icon icon-comment-alt"></span>
+		</a>
+	</div>
+		</div>
+					<div id="div-gpt-ad-mobilemultibox_belowarticle" class="widget_ad_layers_ad_widget gpt-mobilemultibox" data-beforetext="" data-fallbacktext=""></div><script style="text/javascript">
+				if (typeof adInstance === 'undefined') {
+					adInstance = new AdLayersAPI();
+				}
+				adInstance.lazyLoadAd({ slotName: 'mobilemultibox_belowarticle', format: 'mobilemultibox', targeting: {"slot":"mobilemultibox","pos":"mobilemultibox"} });
+			</script>	<div id="taboola-below-article-thumbnails"></div>
+
+	<script type="text/javascript">
+		/** scroll cookie for scroll.com **/
+		if (document.cookie.indexOf("scroll0=") < 0) {
+			window._taboola = window._taboola || [];
+						_taboola.push({
+				mode: 'thumbnails-a',
+				container: 'taboola-below-article-thumbnails',
+				placement: 'Below Article Thumbnails',
+				target_type: 'text'
+			});
+					};
+	</script>
+		<div id="mobile-native-below-article"></div>
+	<script type="text/javascript">
+		var isMobile = window.matchMedia('screen and (max-width: 767px)').matches;
+		/** scroll cookie for scroll.com **/
+		if (document.cookie.indexOf("scroll0=") < 0 && isMobile) {
+			window._taboola = window._taboola || [];
+			_taboola.push({
+				mode: 'thumbs-feed-03-mobile',
+				container: 'mobile-native-below-article',
+				placement: 'Below Article Thumbnails - Fallback',
+				target_type: 'text'
+			});
+		};
+	</script>
+					</div>
+		</div>
+		<div class="section-content--secondary">
+			<aside class="sidebar article-sidebar">
+						<section id="nbc_most_popular-2" class="widget widget_nbc_most_popular"><div class="nbc-most-popular" data-react-component="MostPopular" data-title="Trending Stories" data-include-sponsored="true" data-beforetext="Presented By"></div></section><section id="ad_layers_ad_widget-2" class="widget widget_ad_layers_ad_widget"><div id="div-gpt-ad-topbox_720" class=" gpt-topbox" data-beforetext="" data-fallbacktext=""></div><script style="text/javascript">
+				if (typeof adInstance === 'undefined') {
+					adInstance = new AdLayersAPI();
+				}
+				adInstance.lazyLoadAd({ slotName: 'topbox_720', format: 'topbox', targeting: {"slot":"topbox","pos":"topbox"} });
+			</script></section><section id="nbc_weather_widget-3" class="widget widget_nbc_weather_widget">		<div class="nbc-weather-widget">
+			<div class="nbc_owned_television_stations_weather_iframe">
+	<h3>Weather Forecast</h3><div data-react-component="IframeLocation" data-market-name="Los Angeles, CA"></div>
+	<a class="weather-module__conditions" href="https://www.nbclosangeles.com/weather/">
+		<div data-react-component="IframeConditions" data-location="90012"></div>
+	</a>
+		<div class="widget_sponsor">
+		<div id="div-gpt-ad-logo_weather_175" class="sponsored-ad-unit gpt-logo" data-beforetext="Presented By" data-fallbacktext=""></div><script style="text/javascript">
+				if (typeof adInstance === 'undefined') {
+					adInstance = new AdLayersAPI();
+				}
+				adInstance.lazyLoadAd({ slotName: 'logo_weather_175', format: 'logo', targeting: {"module":"weather","slot":"logo","pos":"logo"} });
+			</script>	</div>
+</div>
+		</div>
+		</section><section id="ad_layers_ad_widget-9" class="widget widget_ad_layers_ad_widget"><div id="div-gpt-ad-mobilemultibox_888" class=" gpt-mobilemultibox" data-beforetext="" data-fallbacktext=""></div><script style="text/javascript">
+				if (typeof adInstance === 'undefined') {
+					adInstance = new AdLayersAPI();
+				}
+				adInstance.lazyLoadAd({ slotName: 'mobilemultibox_888', format: 'mobilemultibox', targeting: {"slot":"mobilemultibox","pos":"mobilemultibox"} });
+			</script></section><section id="nbc_civic_science-2" class="widget widget_nbc_civic_science"><div id="civsci-1583187804" class="module-civicScience" data-tgtid="0909a40d-dd50-9874-ed1c-85b00dc31eb3"></div></section><section id="ad_layers_ad_widget-6" class="widget widget_ad_layers_ad_widget"><div id="div-gpt-ad-bottombox_829" class=" gpt-bottombox" data-beforetext="" data-fallbacktext=""></div><script style="text/javascript">
+				if (typeof adInstance === 'undefined') {
+					adInstance = new AdLayersAPI();
+				}
+				adInstance.lazyLoadAd({ slotName: 'bottombox_829', format: 'bottombox', targeting: {"slot":"bottombox","pos":"bottombox"} });
+			</script></section><section id="ad_layers_ad_widget-12" class="widget widget_ad_layers_ad_widget"><div id="div-gpt-ad-interstitial_534" class=" gpt-interstitial" data-beforetext="" data-fallbacktext=""></div><script style="text/javascript">
+				if (typeof adInstance === 'undefined') {
+					adInstance = new AdLayersAPI();
+				}
+				adInstance.lazyLoadAd({ slotName: 'interstitial_534', format: 'interstitial', targeting: {"slot":"interstitial","pos":"interstitial"} });
+			</script></section><section id="ad_layers_ad_widget-13" class="widget widget_ad_layers_ad_widget"><div id="div-gpt-ad-mobilebackstage_658" class=" gpt-mobilebackstage" data-beforetext="" data-fallbacktext=""></div><script style="text/javascript">
+				if (typeof adInstance === 'undefined') {
+					adInstance = new AdLayersAPI();
+				}
+				adInstance.lazyLoadAd({ slotName: 'mobilebackstage_658', format: 'mobilebackstage', targeting: {"slot":"mobilebackstage","pos":"mobilebackstage"} });
+			</script></section>			</aside>
+		</div>
+	</div>
+</article>
+
+			</main>
+		</div>
+
+		
+	</div><!-- #content -->
+	
+<footer role="contentinfo" class="site-footer">
+	<div class="site-footer__wrapper">
+		<div class="site-footer__identity">
+							<a href="https://www.nbclosangeles.com/" class="site-footer__logo">
+					<img
+						src="https://media.nbclosangeles.com/2021/04/Los-Angeles@3x.png?fit=177%2C120&#038;quality=85&#038;strip=all"
+						alt="NBC Los Angeles"
+						loading="lazy"
+					/>
+				</a>
+			
+			
+			<ul class="site-footer__social-list">
+				
+									<li class="site-footer__social-list-item facebook">
+						<a href="http://www.facebook.com/NBCLA" target="_blank" rel="noopener noreferrer">
+							<span class="screen-reader-text">Facebook</span>
+							<span class="icon icon-facebook-f"></span>
+						</a>
+					</li>
+				
+									<li class="site-footer__social-list-item twitter">
+						<a href="https://twitter.com/nbcla" target="_blank" rel="noopener noreferrer">
+							<span class="screen-reader-text">Twitter</span>
+							<span class="icon icon-twitter"></span>
+						</a>
+					</li>
+				
+									<li class="site-footer__social-list-item instagram">
+						<a href="https://instagram.com/nbcla" target="_blank" rel="noopener noreferrer">
+							<span class="screen-reader-text">Instagram</span>
+							<span class="icon icon-instagram"></span>
+						</a>
+					</li>
+							</ul>
+		</div>
+
+		<ul id="menu-footer" class="footer-menu site-footer__menu-primary"><li id="menu-item-2252388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2252388"><a href="https://www.nbclosangeles.com/newsletters/">Newsletters</a></li>
+<li id="menu-item-2252711" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2252711"><a href="/investigations/submit-tip/">Submit Tips for Investigations</a></li>
+<li id="menu-item-2252389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2252389"><a href="https://www.nbclosangeles.com/contact-us/">Contact Us and Meet the News Team</a></li>
+<li id="menu-item-2299966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2299966"><a href="https://www.nbclosangeles.com/internships/">Internships</a></li>
+</ul><ul id="menu-secondary-footer" class="footer-menu-secondary site-footer__menu-secondary"><li id="menu-item-2227728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2227728"><a href="https://publicfiles.fcc.gov/tv-profile/knbc/">KNBC Public Inspection File</a></li>
+<li id="menu-item-2451723" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2451723"><a href="https://www.nbclosangeles.com/fcc-applications/">FCC Applications</a></li>
+<li id="menu-item-2227730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2227730"><a href="https://www.nbclosangeles.com/knbc-employment-information/">KNBC Employment Information</a></li>
+<li id="menu-item-2227731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2227731"><a href="https://www.nbclosangeles.com/send-feedback/">Send Feedback</a></li>
+<li id="menu-item-2413457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2413457"><a href="mailto:KNBCViewerMail.Advertising@nbcuni.com?subject=Advertise%20with%20Us%20">Advertise With Us</a></li>
+<li id="menu-item-2227732" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2227732"><a href="https://www.nbclosangeles.com/terms-of-service/">Terms of Service</a></li>
+<li id="menu-item-2227736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2227736"><a href="https://www.nbcuniversal.com/privacy/?brandA=Owned_Stations&#038;intake=NBC_Southern_California/">Privacy Policy</a></li>
+<li id="menu-item-2227737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2227737"><a href="https://www.nbcuniversal.com/privacy/notrtoo?brandA=Owned_Stations&#038;intake=NBC_Southern_California/">Do Not Sell My Personal Information</a></li>
+<li id="menu-item-2400314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2400314"><a href="https://www.nbcuniversal.com/privacy/california-consumer-privacy-act?intake=NBC_Southern_California">CA Notice</a></li>
+<li id="menu-item-2416001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2416001"><a href="https://info.evidon.com/pub_info/209?v=1&#038;nt=0&#038;nw=false">AdChoices</a></li>
+</ul>
+				<div class="site-footer__corporate">
+			
+			<span class="site-footer__corporate-copyright">
+				Copyright © 2021 NBCUniversal Media, LLC. All rights reserved			</span>
+		</div>
+	</div><!-- wrapper -->
+</footer><!-- #colophon -->
+</div><!-- #page -->
+
+	<script type="text/javascript">
+	(function() {
+		var _sf_async_config      = window._sf_async_config = window._sf_async_config || {};
+		_sf_async_config.domain   = "nbclosangeles.com";
+		_sf_async_config.uid      = 15527;
+		_sf_async_config.sections = "";
+		_sf_async_config.authors  = "Randy Mac, Christine Roher";
+		_sf_async_config.title    = "Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online";
+		
+		var e = document.createElement('script');
+		var n = document.getElementsByTagName('script')[0];
+		e.type = 'text/javascript';
+		e.async = true;
+		e.src = '//static.chartbeat.com/js/chartbeat.js';
+		n.parentNode.insertBefore(e, n);
+	})();
+	</script>
+			<!-- Begin comScore Tag -->
+		<script>
+		var usPrivacyCookie = new RegExp("usprivacy=([^;]+)").exec(document.cookie),
+		usPrivacy = null !== usPrivacyCookie ? unescape(usPrivacyCookie[1]) : undefined,
+		csUCFR= '1YNN' === usPrivacy ? '': '0',
+		_comscore = _comscore || [];
+		_comscore.push({
+			c1: "2",
+			c2: "6035083",
+			cs_ucfr: csUCFR,
+		});
+		(function() {
+			var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+			s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+			el.parentNode.insertBefore(s, el);
+		})();
+		</script>
+		<noscript>
+			<img src="https://sb.scorecardresearch.com/p?c1=2&c2=6035083&cv=2.0&cj=1" />
+		</noscript>
+		<!-- End comScore Tag -->
+				<script type="text/javascript">
+		(function() {
+			window._taboola = window._taboola || [];
+			window._newsroom = window._newsroom || [];
+			var loaderUrl = 'https://cdn.taboola.com/libtrc/nbcots-network/loader.js';
+			const taboola_config = {};
+
+			taboola_config[decodeURIComponent( 'article' )] = decodeURIComponent( '2749633' );
+			taboola_config['url'] = document.URL;
+			taboola_config['tracking'] = '_osource=taboola-recirc';
+			_taboola.push(taboola_config);
+
+			
+			!function (e, f, u, i) {
+				e.async = 1;
+				e.src = u;
+				e.id = i;
+				f.parentNode.insertBefore(e, f);
+			}(document.createElement('script'),
+			document.getElementsByTagName('script')[0],
+			loaderUrl,
+			'tb_loader_script');
+
+			!function (e, f, u) {
+				e.async = 1;
+				e.src = u;
+				f.parentNode.insertBefore(e, f);
+			}(document.createElement('script'),
+			document.getElementsByTagName('script')[0],
+			"\/\/c2.taboola.com\/nr\/nbcots-knbc\/newsroom.js");
+		}());
+		</script>
+				<div class="facebook-comments">
+			<button class="facebook-comments__close"><span class="icon icon-chevron-left"></span> Back to Article</button>
+			<div class="fb-comments" data-href="https://www.nbclosangeles.com/news/local/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online/2749633/" data-width="100%"></div>
+		</div>
+		<div class="flyout-nav" data-component="flyoutNav">
+	<button class="flyout-nav__close"><span class="icon icon-times"></span> <span class="screen-reader-text">Close Menu</span></button>
+	<div class="flyout-nav__logo">
+		<a href="https://www.nbclosangeles.com/">
+					<img
+						src="https://media.nbclosangeles.com/2021/04/Los-Angeles@3x.png?fit=177%2C120&#038;quality=85&#038;strip=all"
+						alt="NBC Los Angeles"
+					/>
+		</a>
+	</div>
+	<div class="flyout-nav__search">
+<form class="search-form" role="search" method="get" action="https://www.nbclosangeles.com/" >
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" value="" name="s" placeholder="Search" />
+	</label>
+	<input type="submit" class="search-submit" value="Search" />
+</form>
+</div>
+	<div class="flyout-nav__menu">
+		<div class="flyout-nav__menu--upper">
+							<a data-lid="Local" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/news/local/">
+					Local				</a>
+							<a data-lid="Education News &amp; Resources" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="/education/">
+					Education News &amp; Resources				</a>
+							<a data-lid="California" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/news/california-news/">
+					California				</a>
+							<a data-lid="US &amp; World" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/news/national-international/">
+					US &amp; World				</a>
+							<a data-lid="Coronavirus Pandemic" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="/news/coronavirus/">
+					Coronavirus Pandemic				</a>
+							<a data-lid="Weather" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/weather/">
+					Weather				</a>
+							<a data-lid="Investigations" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/investigations/">
+					Investigations				</a>
+							<a data-lid="Consumer" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="/investigations/randy-responds/">
+					Consumer				</a>
+							<a data-lid="Sports" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/news/sports/">
+					Sports				</a>
+							<a data-lid="Play The Challenge" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="https://www.nbclosangeles.com/news/sports/the-challenge-register-play-2020/2425810/">
+					Play The Challenge				</a>
+							<a data-lid="Politics" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/news/politics/">
+					Politics				</a>
+							<a data-lid="NewsConference" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="/news/politics/newsconference/">
+					NewsConference				</a>
+							<a data-lid="Entertainment &amp; Lifestyle" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/entertainment/">
+					Entertainment &amp; Lifestyle				</a>
+							<a data-lid="Entertainment News" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="/entertainment/">
+					Entertainment News				</a>
+							<a data-lid="California Live" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="/california-live/">
+					California Live				</a>
+							<a data-lid="The Scene" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="/the-scene/">
+					The Scene				</a>
+							<a data-lid="NBCLX" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/lx/">
+					NBCLX				</a>
+							<a data-lid="Travel &amp; Adventure" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/worth-the-trip/">
+					Travel &amp; Adventure				</a>
+							<a data-lid="NBC4 in the Community" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/community/">
+					NBC4 in the Community				</a>
+							<a data-lid="Life Connected" data-lpos="hamburger-menu" class="flyout-nav__menu-item parent-item" href="/lifeconnected/">
+					Life Connected				</a>
+					</div>
+		<div class="flyout-nav__menu--lower">
+							<a data-lid="Meet the News Team" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="https://www.nbclosangeles.com/contact-us/">
+					Meet the News Team				</a>
+							<a data-lid="Submit a Consumer Complaint" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="/consumer-form/">
+					Submit a Consumer Complaint				</a>
+							<a data-lid="Send us your photos and videos" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="https://www.nbclosangeles.com/ugc/">
+					Send us your photos and videos				</a>
+							<a data-lid="Contests" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="/contests/">
+					Contests				</a>
+							<a data-lid="Our Apps" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="/products/">
+					Our Apps				</a>
+							<a data-lid="Newsletters" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="https://www.nbclosangeles.com/newsletters/">
+					Newsletters				</a>
+							<a data-lid="Cozi TV" data-lpos="hamburger-menu" class="flyout-nav__menu-item child-item" href="https://cozitv.com/">
+					Cozi TV				</a>
+					</div>
+	</div>
+	<div class="flyout-nav__social">
+		<h4 class="flyout-nav__social-heading">Follow Us</h4>
+		<ul class="flyout-nav__social-list">
+			
+							<li class="site-footer__social-list-item facebook" rel="noopener noreferrer">
+					<a href="http://www.facebook.com/NBCLA" target="_blank">
+						<span class="screen-reader-text">Facebook</span>
+						<span class="icon icon-facebook-f"></span>
+					</a>
+				</li>
+			
+							<li class="site-footer__social-list-item twitter" rel="noopener noreferrer">
+					<a href="https://twitter.com/nbcla" target="_blank">
+						<span class="screen-reader-text">Twitter</span>
+						<span class="icon icon-twitter"></span>
+					</a>
+				</li>
+			
+							<li class="site-footer__social-list-item instagram" rel="noopener noreferrer">
+					<a href="https://instagram.com/nbcla" target="_blank">
+						<span class="screen-reader-text">Instagram</span>
+						<span class="icon icon-instagram"></span>
+					</a>
+				</li>
+					</ul>
+	</div>
+</div>
+<a class="flyout-contact-button" data-lid="Contact Us" data-lpos="hamburger-menu"
+			href="/contact-us"
+	>
+	Contact Us</a>
+<link rel='stylesheet' id='all-css-0' href='https://www.nbclosangeles.com/_static/??-eJydzk0OgyAQBeALVRBFxEXTGzS9QQMDRBJ+jIxtvH3RE7RdzWLmffPoe2kgJ7QJKc422kKThqagQp8TheCPjd58MBRKoTEXfORlC2olXWvV6CY3Tlw6JvtOSk6iT6QeXuiPsMsZ7UqM6Z3mHMQAIKSamNDmfzPsecO7ehFeu06gQQ0VlVpwa/S37DnhBJegdrs+S6xl5yN7i1cmesG6+qD9AC2bdcw=' type='text/css' media='all' />
+<script src='https://www.nbclosangeles.com/wp-content/mu-plugins/jetpack-9.4/_inc/build/photon/photon.min.js?ver=20191001' id='jetpack-photon-js'></script>
+<script src='https://www.nbclosangeles.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://www.nbclosangeles.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.nbclosangeles.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.nbclosangeles.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.nbclosangeles.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.nbclosangeles.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.nbclosangeles.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script src='https://www.nbclosangeles.com/wp-includes/js/dist/i18n.min.js?ver=4ab02c8fd541b8cfb8952fe260d21f16' id='wp-i18n-js'></script>
+<script src='https://www.nbclosangeles.com/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.21' id='lodash-js'></script>
+<script id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script src='https://www.nbclosangeles.com/wp-includes/js/dist/url.min.js?ver=d80b474ffb72c3b6933165cc1b3419f6' id='wp-url-js'></script>
+<script src='https://www.nbclosangeles.com/wp-includes/js/dist/hooks.min.js?ver=63769290dead574c40a54748f22ada71' id='wp-hooks-js'></script>
+<script id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script src='https://www.nbclosangeles.com/wp-includes/js/dist/api-fetch.min.js?ver=0bb73d10eeea78a4d642cdd686ca7f59' id='wp-api-fetch-js'></script>
+<script id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://www.nbclosangeles.com/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "e3f2ad112f" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://www.nbclosangeles.com/wp-admin/admin-ajax.php?action=rest-nonce";
+wp.apiFetch.use( wp.apiFetch.createPreloadingMiddleware( {"\/nbc\/v1\/weather-alerts":{"body":[],"headers":[]},"\/nbc\/v1\/top-stories?include_sponsored=1&section=investigations":{"body":[{"title":"Map: See the 26.2-Mile Los Angeles Marathon Route","link":"https:\/\/www.nbclosangeles.com\/news\/local\/map-2021-la-marathon-route-course-schedule\/2748948\/","eyebrow":"LA Marathon","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/la-marathon\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/2-GettyImages-1211188388.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Inch by Inch: Extreme Hoarder House in Koreatown is Getting Cleaned Up","link":"https:\/\/www.nbclosangeles.com\/news\/local\/extreme-hoarder-house-koreatown-gets-cleaned-up\/2748000\/","eyebrow":"Koreatown","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/koreatown\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/hoarder-house-split-koreatown-1.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"LA City Policy of Full Vax Proof at Many Indoor Spaces Begins Monday","link":"https:\/\/www.nbclosangeles.com\/news\/local\/la-city-policy-of-full-vax-proof-at-many-indoor-spaces-begins-monday\/2749722\/","eyebrow":"COVID-19","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/covid-19\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/09\/106942534-1631742860786-gettyimages-1233049762-AFP_9AK49M.jpeg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Brazilian Singer and Latin Grammy Winner Dies in Plane Crash","link":"https:\/\/www.nbclosangeles.com\/entertainment\/entertainment-news\/brazilian-singer-and-latin-grammy-winner-dies-in-plane-crash\/2749485\/","eyebrow":"Mar\u00edlia Mendon\u00e7a","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/marilia-mendonca\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/AP_21309835530125-e1636156632744.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"White Mom With Black Daughter Accused of Human Trafficking on Southwest Airlines Flight","link":"https:\/\/www.nbclosangeles.com\/news\/local\/white-mom-with-black-daughter-accused-of-human-trafficking-on-southwest-airlines-on-flight\/2749351\/","eyebrow":"racial justice","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/racial-justice\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/Screen-Shot-2021-11-05-at-3.01.14-PM.png?resize=100%2C56&quality=85&strip=all","type":"article","presented_by":""},{"title":"Travis Scott Speaks Out After \u2018Mass Casualty Incident' at Astroworld Concert","link":"https:\/\/www.nbclosangeles.com\/entertainment\/entertainment-news\/travis-scott-speaks-out-after-mass-casualty-incident-at-astroworld-concert\/2750292\/","eyebrow":"Travis Scott","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/travis-scott\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/TRAVIS-SCOTT.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Officials: 8 Dead After Crowd Surge at Astroworld Fest in Houston","link":"https:\/\/www.nbclosangeles.com\/entertainment\/entertainment-news\/officials-8-dead-many-injured-at-astroworld-fest-in-texas\/2749864\/","eyebrow":"Astroworld Fest","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/astroworld-fest\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/TRAVIS-SCOTT-CONCERT-CROWD.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Four Los Angeles County Men Among 34 Arrested in SB County Marijuana Busts","link":"https:\/\/www.nbclosangeles.com\/news\/local\/four-los-angeles-county-men-among-34-arrested-in-sb-county-marijuana-busts\/2750398\/","eyebrow":"marijuana","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/marijuana\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/10\/GettyImages-1333288160.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Pictures Reveal What \u2018Jet Pack Man' in Sky Near LAX Might Be \u2014 and It's Not What You'd Expect","link":"https:\/\/www.nbclosangeles.com\/investigations\/pictures-jet-pack-man-in-sky-near-lax\/2742742\/","eyebrow":"jetpack","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/jetpack\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/Screen-Shot-2021-11-01-at-5.21.07-PM.png?resize=100%2C56&quality=85&strip=all","type":"article","presented_by":""},{"title":"This 29-Year-Old USPS Mail Carrier Is on Track to Make Over $90,000 This Year\u2014Here's How He Spends His Money","link":"https:\/\/www.nbclosangeles.com\/news\/business\/money-report\/this-29-year-old-usps-mail-carrier-is-on-track-to-make-over-90000-this-year-heres-how-he-spends-his-money\/2747354\/","eyebrow":"personal finance","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/personal-finance\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/106969693-1635890970716-MakeIt_210930_MillennialMoney_JordanMyers_FinalCut_v500_05_52_01Still005.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Driver of Stolen Big Rig Surrenders After Overnight Freeway Standoff and Eight-Hour Chase","link":"https:\/\/www.nbclosangeles.com\/news\/local\/socal-police-chases\/stolen-big-rig-driver-pursuit-chase-freeway-standoff-chp-santa-ana-55\/2746578\/","eyebrow":"chase","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/chase\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/big-rig-chase-2-november-4-2021.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Small Shelters, Complete With AC, Built to Get High-Risk Veterans Off the Street","link":"https:\/\/www.nbclosangeles.com\/local-2\/west-los-angeles-va-homeless-veterans-pallet-homes\/2747792\/","eyebrow":"Los Angeles","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/los-angeles\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/17-MicrosoftTeams-image-2.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Biden Hails Infrastructure Win as \u2018Monumental Step Forward'","link":"https:\/\/www.nbclosangeles.com\/news\/politics\/house-plans-friday-votes-on-bidens-spending-infrastructure-bills\/2748668\/","eyebrow":"Congress","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/congress\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/GettyImages-1236378174.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"OC Mass Shooting Suspect Found Too Incapacitated to Assist in His Defense","link":"https:\/\/www.nbclosangeles.com\/news\/local\/oc-mass-shooting-suspect-found-too-incapacitated-to-assist-in-his-defense\/2749494\/","eyebrow":"Orange County","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/orange-county\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/04\/orange-shooting-suspect-galaxio-gonzales.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Roads, Transit, Internet: What's in the Infrastructure Bill","link":"https:\/\/www.nbclosangeles.com\/news\/politics\/roads-transit-internet-whats-in-the-infrastructure-bill\/2750146\/","eyebrow":"Congress","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/congress\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/DEMS-BIPARTISAN-INFRASTRUCTURE.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Toppled Pine Tree Crushes About 30 Cars During Concert at LA's Greek Theatre","link":"https:\/\/www.nbclosangeles.com\/news\/local\/tall-tree-crushes-cars-greek-theatre-griffith-park\/2747157\/","eyebrow":"Griffith Park","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/griffith-park\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/griffith-park-greek-theatre-tree-november-4-2021.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Coroner Confirms Cause of Death for Actress and Music Video Star Tawny Kitaen","link":"https:\/\/www.nbclosangeles.com\/entertainment\/coroner-cause-of-death-actress-tawny-kitaen-whitesnake-coverdale-newport-beach\/2728365\/","eyebrow":"Entertainment","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/entertainment\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/10\/GettyImages-186689819.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"\u2018Clifford the Big Red Dog' Has a Supersized Message for Kids","link":"https:\/\/www.nbclosangeles.com\/entertainment\/clifford-the-big-red-dog-has-a-supersized-message-for-kids\/2750336\/","eyebrow":"Clifford the Big Red Dog","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/clifford-the-big-red-dog\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/clifford-the-big-red-dog-CLIF-FF-032_31R2K_rgb.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Privacy Expert Suggests Doing This to Help Protect Your Personal Information Online","link":"https:\/\/www.nbclosangeles.com\/news\/local\/privacy-expert-suggests-doing-this-to-help-protect-your-personal-information-online\/2749633\/","eyebrow":"Randy Mac","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/randy-mac\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/03\/online-privacy-1.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"No-Burn Order Extended Through Sunday Night in Many Parts of SoCal","link":"https:\/\/www.nbclosangeles.com\/news\/local\/no-burn-order-extended-through-sunday-night-in-many-parts-of-socal\/2750432\/","eyebrow":"Air Quality","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/air-quality\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/GettyImages-540009387-e1636147580697.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Lung Transplant Survivor Pleads With Public to Get Vaccinated","link":"https:\/\/www.nbclosangeles.com\/news\/local\/lung-transplant-survivor-pleads-with-public-to-get-vaccinated\/2749500\/","eyebrow":"COVID-19","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/covid-19\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/13085002993-1080pnbcstations.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Map With New LA Districts Advanced From Ad Hoc Redistricting Committee to Full City Council","link":"https:\/\/www.nbclosangeles.com\/news\/local\/map-with-new-la-districts-advanced-from-ad-hoc-redistricting-committee-to-full-city-council\/2750347\/","eyebrow":"redistricting","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/redistricting\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2019\/09\/LA-City-Hall-council-meetings-Coronavirus-March-2020.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"LAUSD Student Vaccine Deadline Approaches","link":"https:\/\/www.nbclosangeles.com\/on-air\/lausd-student-vaccine-deadline-approaches\/2749545\/","eyebrow":"LAUSD","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/lausd\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/13085686140-1080pnbcstations.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"\u2018Stranger Things' Shopping: A New Store to Open in Glendale","link":"https:\/\/www.nbclosangeles.com\/the-scene\/stranger-things-shopping-a-new-store-to-open-in-glendale\/2745493\/","eyebrow":"Stranger Things","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/stranger-things\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/Stranger-Things-Official-Store_1.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"COVID-19 Vaccine for Young Children Available at Drugstore Chains Starting This Weekend","link":"https:\/\/www.nbclosangeles.com\/news\/coronavirus\/covid-19-vaccine-for-young-children-available-at-drugstore-chains-starting-this-weekend\/2750275\/","eyebrow":"kids covid vaccine","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/kids-covid-vaccine\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/kids-vaccine-5.jpeg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Boxes and Boxes Seen Strewn Along LA Railroad Tracks Amid Cargo Container Theft","link":"https:\/\/www.nbclosangeles.com\/news\/local\/cargo-container-theft-port-backlog-los-angeles\/2742889\/","eyebrow":"ports of los angeles","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/ports-of-los-angeles\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/cargo-thefts-la.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Tupac Museum \u2018Wake Me When I'm Free' Comes to L.A. LIVE, Showcasing Never Before Seen Items","link":"https:\/\/www.nbclosangeles.com\/news\/local\/tupac-museum-wake-me-when-im-free-downtown-los-angeles\/2744070\/","eyebrow":"Downtown LA","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/downtown-la\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/AP21306101045700-copy.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Silver Lake Restaurant Makes Ceviche Before Your Eyes","link":"https:\/\/www.nbclosangeles.com\/california-live\/silver-lake-restaurant-makes-ceviche-before-your-eyes\/2632489\/","eyebrow":"restaurants","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/restaurants\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/07\/10544954040-1080pnbcstations.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Republican Appointed Judges Temporarily Halt Biden Covid Vaccine Mandate for Private Businesses","link":"https:\/\/www.nbclosangeles.com\/news\/business\/money-report\/federal-appeals-court-temporarily-halts-bidens-covid-vaccine-mandate-for-private-businesses\/2750433\/","eyebrow":"coronavirus","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/coronavirus\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/106971863-1636227598819-gettyimages-1230145101-vaccinegacovid00186.jpeg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Off-Duty NYPD Officer Randomly Fires at Car, Shoots Passenger 6 Times: Police","link":"https:\/\/www.nbclosangeles.com\/news\/national-international\/nypd-officer-shooting-pelham-lincoln-avenue\/71524\/","eyebrow":"","eyebrow_link":"","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2019\/09\/NBC@3x-6.png?resize=100%2C56&quality=85&strip=all","type":"article","presented_by":""},{"title":"City of LA Will Pay 3,000 Families With New Pilot Basic Income Program \u2018BIG: LEAP'","link":"https:\/\/www.nbclosangeles.com\/news\/local\/city-will-pay-3000-los-angeles-families-new-pilot-basic-income-program-big-leap\/2734046\/","eyebrow":"guaranteed basic income","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/guaranteed-basic-income\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/10\/GettyImages-1294830833.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"LA Firefighters Commuting From Alaska, Florida, North Carolina Could Be Forced to Relocate","link":"https:\/\/www.nbclosangeles.com\/investigations\/lafd-la-firefighters-long-distance-commute-alaska-florida-north-carolina-relocate\/2743980\/","eyebrow":"LAFD","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/lafd\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/GettyImages-841906968.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""},{"title":"Pete and Chasten Buttigieg's Baby Son Is Out of the Hospital","link":"https:\/\/www.nbclosangeles.com\/entertainment\/entertainment-news\/pete-and-chasten-buttigiegs-baby-son-is-out-of-the-hospital\/2749987\/","eyebrow":"Pete Buttigieg","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/pete-buttigieg\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/GettyImages-1138755237.jpg?quality=85&strip=all&crop=0px%2C0px%2C0px%2C0px&resize=100%2C56","type":"article","presented_by":""},{"title":"Rare Amur Leopard Cub Makes Her Public Debut at the Santa Barbara Zoo","link":"https:\/\/www.nbclosangeles.com\/news\/local\/rare-amur-leopard-cub-marta-santa-barbara-zoo-animals\/2749029\/","eyebrow":"Santa Barbara Zoo","eyebrow_link":"https:\/\/www.nbclosangeles.com\/tag\/santa-barbara-zoo\/","thumbnail_url":"https:\/\/media.nbclosangeles.com\/2021\/11\/amur-leopard-cub-marta-FCzRU5SVIAotdy4.jpg?quality=85&strip=all&resize=100%2C56","type":"article","presented_by":""}],"headers":[]}} ) );
+</script>
+<script src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/js/common.fcc9123f27fb3d49cde8.bundle.min.js?ver=1.0.2' id='nbc-common-js-js'></script>
+<script async src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/js/weatherConditions.87a2ab5dafb347c6e53b.bundle.min.js?ver=1.0.2' id='nbc-weather-conditions-js'></script>
+<script async src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/js/global.bcb1820db513d54e4c74.bundle.min.js?ver=1.0.2' id='nbc-global-js-js'></script>
+<script async src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/js/article.ec150080dec29a6c96b7.bundle.min.js?ver=1.0.2' id='nbc-article-js-js'></script>
+<script src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/js/analytics.9ba537a09f8b0b5ceac2.bundle.min.js?ver=1.0.2' id='nbc-analytics-js-js'></script>
+<script src='https://ak.sail-horizon.com/spm/spm.v1.min.js?ver=1.0.0' id='nbc-sailthru-js'></script>
+<script id='nbc-sailthru-js-after'>
+if ("undefined" !== typeof Sailthru) { Sailthru.init({"customerId":"757cc89c051f4552fa5708e6f3b93a01"}); }
+</script>
+<script src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/static/js/zepto.min.js?ver=1.0.2' id='zepto-js'></script>
+<script src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/static/js/player.6.1.3.js?ver=1.0.2' id='pdk-js'></script>
+<script src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/js/videoPlayer.7b5017f07999a106edc4.bundle.min.js?ver=1.0.2' id='nbc-video-player-js'></script>
+<script src='https://native.sharethrough.com/assets/sfp.js?ver=5.5.6' id='sharethrough-js'></script>
+<script async src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/js/flyoutNav.57fd800295608226f92a.bundle.min.js?ver=1.0.2' id='nbc-flyout-nav-js'></script>
+<script src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/js/articleContent.002368ae3a0d6363e579.bundle.min.js?ver=1.0.2' id='nbc-article-content-js'></script>
+<script defer src='https://js-sec.indexww.com/ht/p/185796-256714881512110.js?ver=1.0.2' id='nbc-index-exchange-js'></script>
+<script src='https://z.moatads.com/nbcuyieldheader7581548001/moatheader.js?ver=1.0.0' id='moat-js'></script>
+<script src='https://www.nbclosangeles.com/wp-includes/js/wp-embed.min.js?ver=5.5.6' id='wp-embed-js'></script>
+<script src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/js/mostPopular.24581aafd2c2eedb4e36.bundle.min.js?ver=1.0.2' id='nbc-most-popular-js'></script>
+<script src='https://www.nbclosangeles.com/wp-content/themes/nbc-station/client/build/js/civicScience.4db1dfb9fe92d553e9e3.bundle.min.js?ver=1.0.2' id='civic-science-js'></script>
+<script src='https://stats.wp.com/e-202144.js' defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.4.1',blog:'165596152',post:'2749633',tz:'-7',srv:'www.nbclosangeles.com'} ]);
+	_stq.push([ 'clickTrackerInit', '165596152', '2749633' ]);
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"53cef82690","applicationID":"189190456","transactionName":"YVBXYBEFVkZSU00NVlgaYEYKS1FbV1VBSkleRQ==","queueTime":0,"applicationTime":1234,"atts":"TRdAFlkfRRkRURteQktI","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>
