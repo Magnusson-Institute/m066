@@ -1,8 +1,8 @@
-
+#
+# WARNING ... these algorithms will chew up some 6 gig or more of your drive
+#
 
 from sample_texts import *
-
-
 
 ################################################################
 # reference N3K
@@ -30,7 +30,7 @@ def test00(h_file=HTML_1, url='https://Example.Com/SomeArticle.html'):
 
 ################################################################
 
-def test04a(article=TEXT_1):
+def test04a(article=TEXT_2):
     # example from:
     # https://www.thepythoncode.com/article/text-summarization-using-huggingface-transformers-python
 
@@ -51,16 +51,18 @@ def test04a(article=TEXT_1):
     # generate the summarization output
 
     # (example code settings:)
-    # outputs = model.generate(inputs, max_length=150, min_length=40, length_penalty=2.0, num_beams=4, early_stopping=True)
-
-    outputs = model.generate(inputs, max_length=500, min_length=150, length_penalty=2.0, num_beams=4, early_stopping=True)
+    outputs = model.generate(inputs, max_length=150, min_length=40, length_penalty=2.0, num_beams=4, early_stopping=True)
+    # this is too much, pads with garbage
+    # outputs = model.generate(inputs, max_length=500, min_length=150, length_penalty=2.0, num_beams=4, early_stopping=True)
 
     # just for debugging
     # print(outputs)
 
     return(tokenizer.decode(outputs[0]))
 
-def test04b(article=TEXT_1):
+def test04b(article=TEXT_2):
+    return("ugh   ... test04b()... borken, fix this ... cannot infer suitable models")
+
     # from:
     # http://datageek.fr/abstractive-summarization-with-huggingface-pre-trained-models/
 
@@ -78,7 +80,7 @@ def test04b(article=TEXT_1):
     return(summarizer(article, min_length=150, max_length=500))
 
 # this one seems to work the best?
-def test04c(article=TEXT_1):
+def test04c(article=TEXT_2):
     # from:
     # http://datageek.fr/abstractive-summarization-with-huggingface-pre-trained-models/
 
@@ -91,7 +93,7 @@ def test04c(article=TEXT_1):
     return(summarizer(article, min_length=150, max_length=500))
 
 
-def test04d(article=TEXT_1):
+def test04d(article=TEXT_2):
     from transformers import pipeline
     from transformers import GPT2Tokenizer, GPT2Model
 
