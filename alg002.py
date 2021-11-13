@@ -61,7 +61,7 @@ def test04a(article=TEXT_2):
     return(tokenizer.decode(outputs[0]))
 
 def test04b(article=TEXT_2):
-    return("ugh   ... test04b()... borken, fix this ... cannot infer suitable models")
+    print("Note: currently will probably break on some issues with models")
 
     # from:
     # http://datageek.fr/abstractive-summarization-with-huggingface-pre-trained-models/
@@ -94,6 +94,8 @@ def test04c(article=TEXT_2):
 
 
 def test04d(article=TEXT_2):
+    print("Note: currently will probably break on long input")
+
     from transformers import pipeline
     from transformers import GPT2Tokenizer, GPT2Model
 
