@@ -85,6 +85,7 @@ test01(test00a('sample_webpages/sample_002.html').text)
 
 where test00a() returns the Article() body from the sample file.
 
+
 ## Sample 2
 
 ### Baseline:
@@ -130,10 +131,60 @@ platforms, where a company like Apple doesn\'t tell app developers how
 to do moderation.
 ```
 
+## Sample 3
+
+### Baseline:
+
+```
+A Financial Times report seems to argue that Apple has allowed app
+developers to collect customer data from iPhone users without their
+permission.
+
+When privacy…isn’tApple’s decision to introduce App Tracking Privacy
+controls generated lots of controversy and considerable pushback from
+Facebook.
+
+It does also say that while Apple hasn’t responded to questions, it
+has said privacy “remains its North Star."
+
+It may be time for Apple to make a symbolic example to illustrate just
+how serious it is about privacy.
+
+It’s time to police the privacy promise of apps distributed via the
+App Store.
+```
+
+### XLNET
+
+```
+A Financial Times report seems to argue that Apple has allowed app
+developers to collect customer data from iPhone users without their
+permission. Examples of user or device data include, but are not
+limited to: properties of a user’s web browser and its configuration,
+the user’s device and its configuration, the user’s location, or the
+user’s network connection. The loophole is that services such as Snap
+and Facebook have changed the way they gather data to create
+anonymized groups of users, rather than to identify individuals. We
+know the battle for privacy — like security — is an eternal one. Smash
+their system\n\nI think the loophole used here contravenes the spirit
+and expectation of Apple’s rule, that this data “may not be combined
+with other data to track a user across apps and websites owned by
+other companies unless you have been granted permission to track by
+the user.” This strongly suggests it reserves the right to punish
+developers who go against the spirit of that deal. It wouldn’t be the
+first time Apple threatened to kick Facebook out. It last did so after
+it was found that domestic slaves were being sold on Facebook’s
+Instagram service. It may be time for Apple to make a symbolic example
+to illustrate just how serious it is about privacy.
+```
+
 ## Setup (alg002)
 
 _Warning: the data set that will be downloaded for the various models
 in alg002 amount to 6 ~GB or more_
+
+These algorithms use much bigger models - but I don't know how to run
+them yet .. either gives worse results, or they break.
 
 ```
 # run all algs
