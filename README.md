@@ -166,16 +166,18 @@ user’s network connection. The loophole is that services such as Snap
 and Facebook have changed the way they gather data to create
 anonymized groups of users, rather than to identify individuals. We
 know the battle for privacy — like security — is an eternal one. Smash
-their system\n\nI think the loophole used here contravenes the spirit
-and expectation of Apple’s rule, that this data “may not be combined
-with other data to track a user across apps and websites owned by
-other companies unless you have been granted permission to track by
-the user.” This strongly suggests it reserves the right to punish
-developers who go against the spirit of that deal. It wouldn’t be the
-first time Apple threatened to kick Facebook out. It last did so after
-it was found that domestic slaves were being sold on Facebook’s
-Instagram service. It may be time for Apple to make a symbolic example
-to illustrate just how serious it is about privacy.
+their system
+
+I think the loophole used here contravenes the spirit and expectation
+of Apple’s rule, that this data “may not be combined with other data
+to track a user across apps and websites owned by other companies
+unless you have been granted permission to track by the user.” This
+strongly suggests it reserves the right to punish developers who go
+against the spirit of that deal. It wouldn’t be the first time Apple
+threatened to kick Facebook out. It last did so after it was found
+that domestic slaves were being sold on Facebook’s Instagram
+service. It may be time for Apple to make a symbolic example to
+illustrate just how serious it is about privacy.
 ```
 
 ## Setup (alg002)
