@@ -1,8 +1,7 @@
 
+print(" ... takes a moment to start ...")
 
 from sample_texts import *
-
-
 
 ################################################################
 # reference N3K
@@ -29,6 +28,9 @@ def test00(h_file=HTML_1, url='https://Example.Com/SomeArticle.html'):
     
 
 ################################################################
+#
+# This is the "basic upgrade" version
+#
 # XLNET
 # see also:
 #  https://medium.com/analytics-vidhya/text-summarization-using-bert-gpt2-xlnet-5ee80608e961

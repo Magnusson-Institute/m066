@@ -4,11 +4,35 @@ NLP experimentation (FOSS)
 
 (Note: used with external collaborators)
 
+## Setup (alg001)
+
+On MacPro/m1 (arm64) you'll need:
+
+```
+# basic packages
+brew install cmake pkg-config google-perftools
+# build
+cd ~/dev
+git clone https://github.com/google/sentencepiece.git 
+cd sentencepiece
+mkdir build
+cd build
+cmake ..
+make -j $(nproc)
+sudo make install
+sudo update_dyld_shared_cache  # ... this is macOs/m1 command ... deprecated?
+# sudo ldconfig -v  # ... this is ubuntu command
+```
+
+Read more: https://github.com/google/sentencepiece
+
+Then you can set up the Python environment:
+
 ```
 python3.9 -m venv venv
 source venv/bin/activate
 pip install -r ./requirements.txt
-python -i ./alg-01.py
+python -i ./alg001.py
 ```
 
 Then inside python:
@@ -16,11 +40,11 @@ Then inside python:
 ```
 # reference (Newspaper3K)
 test00()
-# XLNET model
+# XLNET model (first time it runs will take a bit of time)
 test01()
 ```
 
-Currently it produces:
+Currently it produces the following for the ref model:
 
 ```
 “In most cases you’re just making all of your information public in
@@ -38,7 +62,7 @@ And you can also do a Facebook privacy checkup.
 Here’s how to access and change your Google privacy settings.
 ```
 
-for the reference and:
+And the following for the XLNET model:
 
 ```
 Popular apps and websites, such as Facebook and Amazon, that many of
@@ -53,8 +77,6 @@ suggests you don’t allow the tech giant to track your browsing
 history. Here’s how to access and change your Google privacy settings.
 ```
 
-for the XLNET model.
-
 Note that to add new files, you bootstrap body text through N3K:
 
 ```
@@ -65,7 +87,7 @@ where test00a() returns the Article() body from the sample file.
 
 ## Sample 2
 
-Baseline:
+### Baseline:
 
 ```
 He laid out ways the company is aiming to solve it, while pointing to
@@ -83,7 +105,7 @@ fundamentally able to ensure that people have.
 I don't think this is the kind of thing that can wait.
 ```
 
-XLNET:
+### XLNET:
 
 ```
 That\'s a question Meta, the company formerly known as Facebook, has
@@ -107,3 +129,76 @@ where companies have very strict safety requirements, and mobile
 platforms, where a company like Apple doesn\'t tell app developers how
 to do moderation.
 ```
+
+## Setup (alg002)
+
+_Warning: the data set that will be downloaded for the various models
+in alg002 amount to 6 ~GB or more_
+
+```
+# run all algs
+# 'a' will download ~1.5GB first time it runs
+print("t5-base")
+test04a()
+# 'b' will download ~3GB first time it runs
+print("t5-base (variation)")
+test04b()
+print("HuggingFace")
+test04c()
+# 'd' will download ~1.2GB first time it runs
+print("gpt2")
+test04d()
+```
+
+
+### Results - test04a()
+
+Sample 1:
+
+```
+<pad> the NBC4 I-Team talked to a privacy expert about the settings
+you might want to have in place to keep your personal information as
+private as possible. for Venmo users, the default setting is public,
+meaning people can see who you’re paying and when. for facebook, you
+may have noticed that ads pop up based on what you’re doing.</s>
+```
+
+Sample 2:
+
+```
+"spoiler alert: I did not have a good time," an employee says of
+harassment. "we have [to strike] a pretty tough balance between
+privacy and integrity," he says. "we can have someone not appear to
+exist to you," he says. "we can have someone not appear to exist to
+you," he says.</s>'
+```
+
+### Results - test04b()
+
+_Currently breaks on both samples_
+
+### Results - test04c()
+
+Sample 1:
+
+```
+Facebook and Amazon are gathering a lot of information about us, and
+even sharing it with others . The NBC4 I-Team talked to a privacy
+expert about the settings you might want to have in place to keep your
+personal information as private as possible . Facebook, Amazon, Venmo
+and Google are the apps and websites that most of us are using, and
+those are the ones gobbling up our data . Expert Hayley Kaplan says a
+quick privacy checkup will help protect some of your personal data
+. Here are tips for adjusting your settings for your Amazon account
+and your Venmo account . For Facebook, you may have noticed that ads
+pop up based on what you’re searching for online, and you can stop the
+social media giant from targeting
+```
+
+_breaks on sample 2_
+
+### Results - test04d()
+
+_Currently breaks on both samples_
+
+

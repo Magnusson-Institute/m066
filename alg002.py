@@ -30,7 +30,7 @@ def test00(h_file=HTML_1, url='https://Example.Com/SomeArticle.html'):
 
 ################################################################
 
-def test04a(article=TEXT_2):
+def test04a(article=TEXT_1):
     # example from:
     # https://www.thepythoncode.com/article/text-summarization-using-huggingface-transformers-python
 
@@ -60,7 +60,7 @@ def test04a(article=TEXT_2):
 
     return(tokenizer.decode(outputs[0]))
 
-def test04b(article=TEXT_2):
+def test04b(article=TEXT_1):
     print("Note: currently will probably break on some issues with models")
 
     # from:
@@ -73,6 +73,7 @@ def test04b(article=TEXT_2):
     # summarizer = pipeline("summarization")
     
     #setting the pipeline
+    # did this version work?  did above summarizer first have to be imported?
     summarizer = pipeline("summarization", model="t5-base", tokenizer="t5-base", framework="tf")
 
     # run the model
@@ -80,9 +81,11 @@ def test04b(article=TEXT_2):
     return(summarizer(article, min_length=150, max_length=500))
 
 # this one seems to work the best?
-def test04c(article=TEXT_2):
+def test04c(article=TEXT_1):
     # from:
     # http://datageek.fr/abstractive-summarization-with-huggingface-pre-trained-models/
+
+    print("Note: currently will probably break on some issues with models")
 
     from transformers import pipeline
 
@@ -93,7 +96,7 @@ def test04c(article=TEXT_2):
     return(summarizer(article, min_length=150, max_length=500))
 
 
-def test04d(article=TEXT_2):
+def test04d(article=TEXT_1):
     print("Note: currently will probably break on long input")
 
     from transformers import pipeline
