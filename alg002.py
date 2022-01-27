@@ -30,7 +30,7 @@ def test00(h_file=HTML_1, url='https://Example.Com/SomeArticle.html'):
 
 ################################################################
 
-def test04a(article=TEXT_1):
+def test04a(article=TEXT_1, min_length=40):
     # example from:
     # https://www.thepythoncode.com/article/text-summarization-using-huggingface-transformers-python
 
@@ -51,7 +51,7 @@ def test04a(article=TEXT_1):
     # generate the summarization output
 
     # (example code settings:)
-    outputs = model.generate(inputs, max_length=150, min_length=40, length_penalty=2.0, num_beams=4, early_stopping=True)
+    outputs = model.generate(inputs, max_length=150, min_length=min_length, length_penalty=2.0, num_beams=4, early_stopping=True)
     # this is too much, pads with garbage
     # outputs = model.generate(inputs, max_length=500, min_length=150, length_penalty=2.0, num_beams=4, early_stopping=True)
 

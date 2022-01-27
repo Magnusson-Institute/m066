@@ -86,6 +86,21 @@ test01(test00a('sample_webpages/sample_002.html').text)
 where test00a() returns the Article() body from the sample file.
 
 
+## Problemshooting
+
+In the end I needed a number of sources:
+
+* https://github.com/huggingface/transformers/issues/3539
+* https://developer.apple.com/metal/tensorflow-plugin/
+
+## Future things to look at
+
+This requires a lot of more space:
+
+* https://github.com/kamigaito/SLAHAN
+
+
+
 ## Sample 2
 
 ### Baseline:

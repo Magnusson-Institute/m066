@@ -132,3 +132,6 @@ dmypy.json
 # PSM's dev environment :-)
 #*
 *~
+#*#*
+\.#*
+\#*
