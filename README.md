@@ -251,17 +251,20 @@ Sample 1:
 
 ```
 Facebook and Amazon are gathering a lot of information about us, and
-even sharing it with others . The NBC4 I-Team talked to a privacy
+even sharing it with others. The NBC4 I-Team talked to a privacy
 expert about the settings you might want to have in place to keep your
-personal information as private as possible . Facebook, Amazon, Venmo
+personal information as private as possible. Facebook, Amazon, Venmo
 and Google are the apps and websites that most of us are using, and
-those are the ones gobbling up our data . Expert Hayley Kaplan says a
+those are the ones gobbling up our data. Expert Hayley Kaplan says a
 quick privacy checkup will help protect some of your personal data
 . Here are tips for adjusting your settings for your Amazon account
-and your Venmo account . For Facebook, you may have noticed that ads
+and your Venmo account. For Facebook, you may have noticed that ads
 pop up based on what you’re searching for online, and you can stop the
 social media giant from targeting
 ```
+
+_The above needed some sentence punctuation fixds._
+
 
 _breaks on sample 2_
 
