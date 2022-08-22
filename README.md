@@ -1,6 +1,6 @@
 # m066
 
-NLP experimentation (FOSS)
+NLP experimentation (FOSS). Results are used by https://privacy.news
 
 (Note: used with external collaborators)
 
