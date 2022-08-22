@@ -310,14 +310,14 @@ privacy settings. Kaplan can walk you through how to blur your home on
 Google maps. Kaplan suggests not using the Google or Facebook account
 to sign in to websites. Kaplan thinks education is the best
 ammunition. The author thinks that once people decide that they care
-about privacy, they can achieve a decent level for themselves.  ```
+about privacy, they can achieve a decent level for themselves.
+```
 
 _The above needed some polish. First of all the phrase 'The quick fix
 for the Facebook post is to set it to private.' was repeated (many
 times), and some other junk ('Posted by Admin on July 17, 2017 in
 News.').  And it ended with the phrase 'A short summary of the
 following text.'._
-
 
 Sample 3:
 
