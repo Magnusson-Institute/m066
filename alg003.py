@@ -16,7 +16,7 @@ headers = {
 the_text = TEXT_1 # set to one of the ones in the sample texts
 
 body = {
-    "compression_level": 1,  # range from 1 (longest) to 5 (shortest)
+    "compression_level": 5,  # range from 1 (longest) to 5 (shortest)
     "text": the_text
 }
 
@@ -28,9 +28,9 @@ res = requests.post(
 
 data = res.json()
 
-if (data == 'Authentication invalid!'):
-    print(data)
-else:
+if ('summary' in data):
     summary = data['summary']
     print(summary)
     print(f"\nWent from {len(the_text)} characters to {len(summary)}")
+else:
+    print(f"####\n####  Problem: '{data}'\n####")
