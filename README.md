@@ -2,7 +2,7 @@
 
 NLP experimentation (FOSS). Results are used by https://privacy.news
 
-(Note: used with external collaborators)
+(Note: this repo used with external collaborators, this is free open source only, nothing proprietary etc)
 
 ## Setup (alg001)
 
@@ -23,6 +23,9 @@ sudo make install
 sudo update_dyld_shared_cache  # ... this is macOs/m1 command ... deprecated?
 # sudo ldconfig -v  # ... this is ubuntu command
 ```
+
+_(Yeah the m1 boxes is what @psm prefers, you're on your own on windows or linux,
+but it should be easier if anything)_
 
 Read more: https://github.com/google/sentencepiece
 
