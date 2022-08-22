@@ -44,7 +44,7 @@ test00()
 test01()
 ```
 
-Currently it produces the following for the ref model:
+Currently it produces the following for the ref model (Sample 1):
 
 ```
 “In most cases you’re just making all of your information public in
@@ -270,3 +270,115 @@ _breaks on sample 2_
 _Currently breaks on both samples_
 
 
+### Results - Forefront.ai
+
+_This requires an account and access to their "summarize" model,
+code is in alg003, you will need a model key._
+
+
+Sample 1:
+
+```
+The NBC4 I-Team talked to a privacy expert about the settings people
+might want to have in place to keep their personal information as
+private as possible. The apps and websites that people are using are
+gobbling up the data. Hayley Kaplan is an online privacy
+expert. Kaplan says a quick privacy checkup will help protect some of
+your personal information. Amazon is a company that sells books and
+other products online. Kaplan says if you have a wish list, it
+defaults to a public setting. The quick fix for the Facebook post is
+to set it to private. Now, your browsing and purchase history aren't
+public. The family members can see all the information on the
+Internet. The seller doesn't want someone in the family to know that
+he's ordered something. Kaplan says there is a way to hide
+that. Amazon tips for keeping the account private. The default setting
+of Venmo is public. The payment to a therapist is private if
+adjusted. Kaplan says you should hide your past transactions and your
+contacts. The tips for adjusting the Venmo privacy settings are
+mentioned. Kaplan prefers Zelle to other cash apps. Kaplan says the
+app is highly encrypted and there is no sharing. Then he talks about
+other apps. The social media giant Facebook allows people to stop it
+from targeting ads at them by tweaking its settings. Kaplan suggests
+not letting people tag him in posts without his approval. The text
+advises people to check their Facebook settings often. Kaplan says
+it's difficult to write an article about Facebook because the settings
+keep changing. The place where people manage their Facebook privacy. A
+Facebook privacy checkup is mentioned. Google knows everything about
+everyone. Kaplan suggests not allowing the tech giant to track your
+browsing history. The text tells how to access and change the Google
+privacy settings. Kaplan can walk you through how to blur your home on
+Google maps. Kaplan suggests not using the Google or Facebook account
+to sign in to websites. Kaplan thinks education is the best
+ammunition. The author thinks that once people decide that they care
+about privacy, they can achieve a decent level for themselves.  ```
+
+_The above needed some polish. First of all the phrase 'The quick fix
+for the Facebook post is to set it to private.' was repeated (many
+times), and some other junk ('Posted by Admin on July 17, 2017 in
+News.').  And it ended with the phrase 'A short summary of the
+following text.'._
+
+
+Sample 3:
+
+```
+A Financial Times report seems to argue that Apple has allowed app
+developers to collect customer data from iPhone users without their
+permission. The new version of Android will allow users to decide
+whether an application can track their online activity. The Internet
+has become more private and secure.  The theory is that this denies
+companies that make their money collecting, curating, and selling your
+information the right to track what you do online. Apple has permitted
+some developers to exploit a loophole in the system. The loophole is
+used by some people to get rid of the rules. The report claims
+Facebook and Snapchat are exploiting a loophole in Apple's guidelines
+to track users. Apple Developer guidelines specific to fingerprinting
+and other technologies designed to identify a device or user say: “Per
+the Apple Developer Program License Agreement, you may not derive data
+from a device for the purpose of uniquely identifying it. The examples
+of user or device data include a user's web browser and its
+configuration, the user's device and its configuration, the user's
+location, or the user's network connection. Apple has banned apps from
+collecting personal information. However, some companies have found a
+loophole. They still collect your information but do not share
+it. Apple collects signals from an iPhone at a group level to target
+cohorts of users. Personal data is anonymized. Sheryl Sandberg says
+Facebook is rebuilding its ad infrastructure. Target doesn't keep
+information about their online shopping habits. One rule to ring them
+all though it doesn't work like that. The MIT Technology Review report
+gives a terrifying insight into how even anonymized data can be
+exploited to build substantial quantities of information about
+people. The surveillance capitalists will turn any amount of
+information into actionable data. The people who purchase the data
+often use AI to develop stacks of information about you. Target
+shoppers will receive ads personalized to them even though they've
+asked not to be tracked. Though no one — technically — broke the
+rules, everyone had a good time. A lull in an ongoing war. Apple
+believes the best way to protect people's data is not to gather it in
+the first place. It has made privacy a pillar to its product
+offering. The battle for privacy - like the battle for security - is
+an eternal one. Apple improves it and others will undermine it. The
+lack of regulation is the reason for the high price of
+cigarettes. Smash their system says that the loophole used by Apple to
+collect data violates the spirit and expectation of Apple's
+rule. Apple should intensify its privacy protections. Apple will warn
+developers of future enforcement against bending of its rules at
+WWDC. Apple's prohibition cites its Developer Program License
+Agreement. The company reserves the right to punish developers who go
+against the spirit of the deal. The author thinks there should be
+consequences for companies that choose to undermine end user
+protection. Apple may unfriend Facebook. Apple may threaten to kick
+Facebook out of its iPhone. It was found that domestic slaves were
+being sold on Facebook's Instagram service. Apple may boot Facebook
+from its servers for undermining the spirit of its developer
+agreement. Apple is turning a blind eye to the fact that some sellers
+are selling used iPhones with fake IMEI numbers. Apple has said
+privacy remains its North Star. My feeling is happy. Apple may make a
+symbolic example to illustrate how serious it is about privacy. The
+company will punish those who transgress the spirit of its developer
+agreement. It's time to police the privacy promise of apps distributed
+via the App Store. AppleHolic recommends people to follow him on
+Twitter and join some groups on MeWe.
+```
+
+_Also had a trailing sentence above._
