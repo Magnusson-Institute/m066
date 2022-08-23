@@ -281,6 +281,8 @@ _Currently breaks on both samples_
 _This requires an account and access to their "summarize" model,
 code is in alg003, you will need a model key._
 
+See: https://www.forefront.ai/blog-posts/how-to-summarize-text-with-ai
+
 
 Sample 1:
 
