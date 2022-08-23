@@ -13,7 +13,9 @@ headers = {
     "Content-Type": "application/json"
 }
 
-the_text = TEXT_1 # set to one of the ones in the sample texts
+# set to one of the ones in the sample texts
+# note: '5' matches the forefront.ai blog post example
+the_text = TEXT_5 
 
 body = {
     "compression_level": 5,  # range from 1 (longest) to 5 (shortest)
