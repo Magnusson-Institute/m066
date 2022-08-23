@@ -17,22 +17,21 @@ headers = {
 # note: '5' matches the forefront.ai blog post example
 the_text = TEXT_5 
 
-body = {
-    "compression_level": 5,  # range from 1 (longest) to 5 (shortest)
-    "text": the_text
-}
-
-res = requests.post(
-    "https://solutions.forefront.ai/v1/organization/dLzOXuUb3LeI/summarize", # hack, in future use your team ID
-    json=body,
-    headers=headers
-)
-
-data = res.json()
-
-if ('summary' in data):
-    summary = data['summary']
-    print(summary)
-    print(f"\nWent from {len(the_text)} characters to {len(summary)}")
-else:
-    print(f"####\n####  Problem: '{data}'\n####")
+for c in range(1, 6):
+    print(f"Running with compression {c}")
+    body = {
+        "compression_level": c,  # range from 1 (longest) to 5 (shortest)
+        "text": the_text
+    }
+    res = requests.post(
+        "https://solutions.forefront.ai/v1/organization/dLzOXuUb3LeI/summarize", # hack, in future use your team ID
+        json=body,
+        headers=headers
+    )
+    data = res.json()
+    if ('summary' in data):
+        summary = data['summary']
+        print(f"\nCompression {c} went from {len(the_text)} characters to {len(summary)}:")
+        print(summary[:200] + "...")
+    else:
+        print(f"####\n####  Problem: '{data}'\n####")
