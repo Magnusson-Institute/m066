@@ -390,3 +390,23 @@ Twitter and join some groups on MeWe.
 ```
 
 _Also had a trailing sentence above._
+
+Sample 5:
+
+Forefront reports on their blog that it should generate:
+
+```
+"The job market is great but people still prefer doing gig work
+because of the flexibility. Ms. Bettis thinks that income from gigs
+can help her save enough money to open her own storefront. She is one
+of the many Americans who are embracing the new working style. Silvia
+Valladares used Snagajob to support herself as a college student. She
+took shine to hospitality and decided to make that her career. She is
+now the bed-and-breakfast director.  Daniel Schneider, a professor at
+Harvard Kennedy School of Government who has studied low-wage work,
+says that companies using gig work as way to shift costs to workers He
+thinks that people who are looking for jobs will be affected if the
+economy tips into recession.
+```
+
+(We haven't replicated this yet)
