@@ -89,6 +89,37 @@ suggests you don’t allow the tech giant to track your browsing
 history. Here’s how to access and change your Google privacy settings.
 ```
 
+And here's Forefront.ai (alg003.py):
+
+_Compression level 2:_
+
+```
+Some popular apps and websites that many of us use are gathering a lot
+of information about us, and even sharing it with others. Online
+privacy is a mess. You’re a smart consumer, so you know how to protect
+your privacy. If you shop on Amazon, you know your purchase history is
+there for you to see. If you use Venmo to pay your bills, you might
+want to think twice before sharing your payment history with your
+friends. If you’re using cash apps like Venmo or Square Cash, you may
+be sharing your financial information with the app’s users. Facebook
+is the most popular social network, but it can be a trap for the
+unwary. You can check your Facebook privacy settings here. You can get
+your privacy back, says computer security expert Ted Kaplan.
+```
+
+_Compression level 3:_
+
+```
+Some of the apps and websites you use every day are gathering and
+sharing your personal information. If you’re shopping online, you
+might be sharing more than you realize. If you use cash apps like
+Venmo or Facebook, you may want to make sure your privacy settings are
+up to date. When it comes to your online privacy, it’s not always easy
+to know what’s going on. You can get your privacy back, says computer
+security expert Ted Kaplan.
+```
+
+
 Note that to add new files, you bootstrap body text through N3K:
 
 ```
@@ -158,6 +189,50 @@ platforms, where a company like Apple doesn\'t tell app developers how
 to do moderation.
 ```
 
+### Forefront (alg003.py):
+
+_Compression level 3:_
+
+```
+The virtual reality company that wants to give people the ability to
+move their bodies in virtual space has some big challenges to
+overcome. A leaked internal document from virtual reality company Meta
+describes an incident in which an employee was subjected to lewd
+comments in an online virtual world. What tools are you using to fight
+harassment in virtual reality? When you go into Horizon, you can see
+what's going on around you. We're trying to strike a balance between
+privacy and integrity. When it comes to virtual reality, there are two
+main concerns: privacy and safety. Facebook is working on tools that
+developers can use to help keep people safe in virtual worlds. The
+virtual worlds that people inhabit are often cross-platform, with
+people on mobile devices, in VR headsets, on PCs and on consoles. The
+virtual reality company Meta has announced plans to make safety the
+top priority for its virtual reality platform.
+```
+
+_Compression level 4:_
+
+```
+The idea of virtual reality is to let people explore virtual worlds
+that are in some ways like real life. When you think about virtual
+reality, what comes to mind? When it comes to virtual reality, there
+are two things that are really important: privacy and
+safety. Microsoft is working on tools that developers can use to help
+keep people safe in virtual reality and augmented reality. The virtual
+reality company Meta has announced plans to make safety the top
+priority for its virtual reality platform.
+```
+
+_Compression level 5:_
+
+```
+The idea of virtual reality is to let people explore virtual worlds,
+but that freedom can lead to some very ugly experiences. When it comes
+to fighting harassment in virtual reality, there are many challenges
+that have to be overcome. The future of virtual reality is bright, and
+it's all thanks to the support of its fans.
+```
+
 ## Sample 3
 
 ### Baseline:
@@ -206,6 +281,30 @@ that domestic slaves were being sold on Facebook’s Instagram
 service. It may be time for Apple to make a symbolic example to
 illustrate just how serious it is about privacy.
 ```
+
+### Forefront (alg003.py):
+
+Compression level 3 was broken (got hickups on the phrase 'app advertising ID').
+
+_Compression level 4:_
+
+```
+Apple has introduced App Tracking Privacy controls to give iPhone
+users control over how their data is used by app developers. Apple has
+introduced new privacy controls for iPhone users that allow them to
+limit how their data is used by app developers. Apple has long been at
+the forefront of promoting user privacy.
+```
+
+_Compression level 5:_
+
+```
+Apple has introduced new App Tracking Privacy controls to give iPhone
+users more control over how their data is used. Apple has long been at
+the forefront of promoting user privacy.
+```
+
+
 
 ## Setup (alg002)
 
@@ -292,110 +391,14 @@ code is in alg003, you will need a model key._
 
 See: https://www.forefront.ai/blog-posts/how-to-summarize-text-with-ai
 
-
-Sample 1:
-
-```
-The NBC4 I-Team talked to a privacy expert about the settings people
-might want to have in place to keep their personal information as
-private as possible. The apps and websites that people are using are
-gobbling up the data. Hayley Kaplan is an online privacy
-expert. Kaplan says a quick privacy checkup will help protect some of
-your personal information. Amazon is a company that sells books and
-other products online. Kaplan says if you have a wish list, it
-defaults to a public setting. The quick fix for the Facebook post is
-to set it to private. Now, your browsing and purchase history aren't
-public. The family members can see all the information on the
-Internet. The seller doesn't want someone in the family to know that
-he's ordered something. Kaplan says there is a way to hide
-that. Amazon tips for keeping the account private. The default setting
-of Venmo is public. The payment to a therapist is private if
-adjusted. Kaplan says you should hide your past transactions and your
-contacts. The tips for adjusting the Venmo privacy settings are
-mentioned. Kaplan prefers Zelle to other cash apps. Kaplan says the
-app is highly encrypted and there is no sharing. Then he talks about
-other apps. The social media giant Facebook allows people to stop it
-from targeting ads at them by tweaking its settings. Kaplan suggests
-not letting people tag him in posts without his approval. The text
-advises people to check their Facebook settings often. Kaplan says
-it's difficult to write an article about Facebook because the settings
-keep changing. The place where people manage their Facebook privacy. A
-Facebook privacy checkup is mentioned. Google knows everything about
-everyone. Kaplan suggests not allowing the tech giant to track your
-browsing history. The text tells how to access and change the Google
-privacy settings. Kaplan can walk you through how to blur your home on
-Google maps. Kaplan suggests not using the Google or Facebook account
-to sign in to websites. Kaplan thinks education is the best
-ammunition. The author thinks that once people decide that they care
-about privacy, they can achieve a decent level for themselves.
-```
-
-_The above needed some polish. First of all the phrase 'The quick fix
-for the Facebook post is to set it to private.' was repeated (many
-times), and some other junk ('Posted by Admin on July 17, 2017 in
-News.').  And it ended with the phrase 'A short summary of the
-following text.'._
-
-Sample 3:
+Sample run:
 
 ```
-A Financial Times report seems to argue that Apple has allowed app
-developers to collect customer data from iPhone users without their
-permission. The new version of Android will allow users to decide
-whether an application can track their online activity. The Internet
-has become more private and secure.  The theory is that this denies
-companies that make their money collecting, curating, and selling your
-information the right to track what you do online. Apple has permitted
-some developers to exploit a loophole in the system. The loophole is
-used by some people to get rid of the rules. The report claims
-Facebook and Snapchat are exploiting a loophole in Apple's guidelines
-to track users. Apple Developer guidelines specific to fingerprinting
-and other technologies designed to identify a device or user say: “Per
-the Apple Developer Program License Agreement, you may not derive data
-from a device for the purpose of uniquely identifying it. The examples
-of user or device data include a user's web browser and its
-configuration, the user's device and its configuration, the user's
-location, or the user's network connection. Apple has banned apps from
-collecting personal information. However, some companies have found a
-loophole. They still collect your information but do not share
-it. Apple collects signals from an iPhone at a group level to target
-cohorts of users. Personal data is anonymized. Sheryl Sandberg says
-Facebook is rebuilding its ad infrastructure. Target doesn't keep
-information about their online shopping habits. One rule to ring them
-all though it doesn't work like that. The MIT Technology Review report
-gives a terrifying insight into how even anonymized data can be
-exploited to build substantial quantities of information about
-people. The surveillance capitalists will turn any amount of
-information into actionable data. The people who purchase the data
-often use AI to develop stacks of information about you. Target
-shoppers will receive ads personalized to them even though they've
-asked not to be tracked. Though no one — technically — broke the
-rules, everyone had a good time. A lull in an ongoing war. Apple
-believes the best way to protect people's data is not to gather it in
-the first place. It has made privacy a pillar to its product
-offering. The battle for privacy - like the battle for security - is
-an eternal one. Apple improves it and others will undermine it. The
-lack of regulation is the reason for the high price of
-cigarettes. Smash their system says that the loophole used by Apple to
-collect data violates the spirit and expectation of Apple's
-rule. Apple should intensify its privacy protections. Apple will warn
-developers of future enforcement against bending of its rules at
-WWDC. Apple's prohibition cites its Developer Program License
-Agreement. The company reserves the right to punish developers who go
-against the spirit of the deal. The author thinks there should be
-consequences for companies that choose to undermine end user
-protection. Apple may unfriend Facebook. Apple may threaten to kick
-Facebook out of its iPhone. It was found that domestic slaves were
-being sold on Facebook's Instagram service. Apple may boot Facebook
-from its servers for undermining the spirit of its developer
-agreement. Apple is turning a blind eye to the fact that some sellers
-are selling used iPhones with fake IMEI numbers. Apple has said
-privacy remains its North Star. My feeling is happy. Apple may make a
-symbolic example to illustrate how serious it is about privacy. The
-company will punish those who transgress the spirit of its developer
-agreement. It's time to police the privacy promise of apps distributed
-via the App Store. AppleHolic recommends people to follow him on
-Twitter and join some groups on MeWe.
+python -i ./alg003.py
+>>> # this replicates forefront's blog posting (nytimes article)
+>>> test05a()
+>>> # this runs range of compression levels on specific sample texts
+>>> test05a(the_text=TEXT_1, c_range=range(1,5))
 ```
 
 _Also had a trailing sentence above._
@@ -405,7 +408,7 @@ Sample 5:
 Forefront reports on their blog that it should generate:
 
 ```
-"The job market is great but people still prefer doing gig work
+The job market is great but people still prefer doing gig work
 because of the flexibility. Ms. Bettis thinks that income from gigs
 can help her save enough money to open her own storefront. She is one
 of the many Americans who are embracing the new working style. Silvia
@@ -418,4 +421,37 @@ thinks that people who are looking for jobs will be affected if the
 economy tips into recession.
 ```
 
-(We haven't replicated this yet)
+We got something similar at compression level "3" and "4":
+
+```
+[3] Why do people continue to do gig work when the job market is so good?
+The so-called gig economy — short-term contracts for services such as
+ride-sharing or delivery — is changing how people work, with more than
+15 million Americans now doing so, according to data from financial
+apps. The world of work is changing, with many workers finding
+themselves in what are known as “gig economies” that offer short-term
+contracts, low wages and flexible hours. The number of people working
+in the so-called gig economy is hard to pin down. The shift from
+full-time jobs to freelance work is continuing, with more workers
+taking on short-term jobs that offer flexibility and low overhead. The
+online labor market is changing how workers find jobs, from
+freelancers to full-time employees. The rise of the so-called gig
+economy, in which workers are hired on short-term contracts, has made
+it a key part of the economy, with some two million workers now
+employed by companies such as Uber, AirBnB and TaskRabbit. The rise of
+online platforms that connect workers with customers has made it easy
+for companies to hire workers on short-term contracts.
+```
+
+
+```
+[4] The job market is strong, but many workers are turning to side gigs to
+supplement their incomes. The world of work is changing, with more
+people working as freelancers, or "gig workers," for companies that
+hire them on short-term contracts. The shift from full-time jobs to
+freelance work is changing how people earn money, from how they spend
+their time to how they get paid. The rise of online platforms that
+connect workers with jobs has been a boon for many low-income workers,
+providing an easy way to earn extra money.
+```
+
