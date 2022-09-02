@@ -31,7 +31,6 @@ for c in range(1, 6):
     data = res.json()
     if ('summary' in data):
         summary = data['summary']
-        print(f"\nCompression {c} went from {len(the_text)} characters to {len(summary)}:")
-        print(summary[:200] + "...")
+        print(f"\nCompression {c} went from {len(the_text)} characters to {len(summary)}:\n{'='*40}\n{summary}\n{'='*40}\n")
     else:
         print(f"####\n####  Problem: '{data}'\n####")
