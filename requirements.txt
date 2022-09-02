@@ -1,59 +1,74 @@
 #
-# Clean from-scratch (tested on MacPro/M1 - Dec 2021)
+# Clean from-scratch (tested on MacPro/M1 - Aug 2022)
 #
-newspaper3k
-transformers
-spacy
-bert-extractive-summarizer
-summarizer
-torch
-sentencepiece  # note: requires installation - this is just a py wrapper
 
+# # below is the core
+# newspaper3k # though we're soon removing this
+# transformers
+# spacy
+# bert-extractive-summarizer
+# summarizer
+# torch
+# sentencepiece  # see README
 
-# bert-extractive-summarizer==0.8.1
-# blis==0.7.5
-# catalogue==2.0.6
-# certifi==2021.10.8
-# charset-normalizer==2.0.7
-# click==8.0.3
-# cymem==2.0.6
-# filelock==3.3.2
-# huggingface-hub==0.1.2
-# idna==3.3
-# Jinja2==3.0.3
-# joblib==1.1.0
-# langcodes==3.3.0
-# MarkupSafe==2.0.1
-# murmurhash==1.0.6
-# newspaper3k==0.2.8
-# nltk==3.6.5
-# numpy==1.21.4
-# packaging==21.2
-# pathy==0.6.1
-# preshed==3.0.6
-# pydantic==1.8.2
-# pyparsing==2.4.7
-# PyYAML==6.0
-# regex==2021.11.10
-# requests==2.26.0
-# sacremoses==0.0.46
-# scikit-learn==1.0.1
-# scipy==1.7.2
-# sentencepiece==0.1.96
-# six==1.16.0
-# smart-open==5.2.1
-# spacy==3.2.0
-# spacy-legacy==3.0.8
-# spacy-loggers==1.0.1
-# srsly==2.4.2
-# summarizer==0.0.7
-# thinc==8.0.13
-# threadpoolctl==3.0.0
-# tokenizers==0.10.3
-# torch==1.10.0
-# tqdm==4.62.3
-# transformers==4.12.3
-# typer==0.4.0
-# typing-extensions==3.10.0.2
-# urllib3==1.26.7
-# wasabi==0.8.2
+# Below working in September 2022 - MacOS m1
+beautifulsoup4==4.11.1
+bert-extractive-summarizer==0.10.1
+blis==0.7.8
+catalogue==2.0.8
+certifi==2022.6.15
+charset-normalizer==2.1.1
+click==8.1.3
+cssselect==1.1.0
+cymem==2.0.6
+feedfinder2==0.0.4
+feedparser==6.0.10
+filelock==3.8.0
+huggingface-hub==0.9.1
+idna==3.3
+jieba3k==0.35.1
+Jinja2==3.1.2
+joblib==1.1.0
+langcodes==3.3.0
+lxml==4.9.1
+MarkupSafe==2.1.1
+murmurhash==1.0.8
+newspaper3k==0.2.8
+nltk==3.7
+numpy==1.23.2
+packaging==21.3
+pathy==0.6.2
+Pillow==9.2.0
+preshed==3.0.7
+pydantic==1.9.2
+pyparsing==3.0.9
+python-dateutil==2.8.2
+PyYAML==6.0
+regex==2022.8.17
+requests==2.28.1
+requests-file==1.5.1
+scikit-learn==1.1.2
+scipy==1.9.1
+sentencepiece==0.1.97
+sgmllib3k==1.0.0
+six==1.16.0
+smart-open==5.2.1
+soupsieve==2.3.2.post1
+spacey==0.1.1
+spacy==3.4.1
+spacy-legacy==3.0.10
+spacy-loggers==1.0.3
+srsly==2.4.4
+summarizer==0.0.7
+thinc==8.1.0
+threadpoolctl==3.1.0
+tinysegmenter==0.3
+tldextract==3.3.1
+tokenizers==0.12.1
+torch==1.12.1
+tqdm==4.64.0
+transformers==4.21.2
+typer==0.4.2
+typing_extensions==4.3.0
+urllib3==1.26.12
+wasabi==0.10.1

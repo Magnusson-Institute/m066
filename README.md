@@ -6,11 +6,19 @@ NLP experimentation (FOSS). Results are used by https://privacy.news
 
 ## Setup (alg001)
 
-On MacPro/m1 (arm64) you'll need:
+Make sure you've updated brew, and have latest xcode; also make sure
+to start and exit xcode so it can do any cleanup (such as command line
+tools).
 
 ```
 # basic packages
-brew install cmake pkg-config google-perftools
+brew install cmake pkg-config google-perftools gcc rust cython htslib
+```
+
+Until very recently, sentencepiece needed to be installed manually (on
+MacPro/m1 arm64), but regular brew install should work now. If not:
+
+```
 # build
 cd ~/dev
 git clone https://github.com/google/sentencepiece.git 
@@ -32,7 +40,8 @@ Read more: https://github.com/google/sentencepiece
 Then you can set up the Python environment:
 
 ```
-python3.9 -m venv venv
+# i'm shifting towards 3.10 but 3.9 should be fine
+python3.10 -m venv venv
 source venv/bin/activate
 pip install -r ./requirements.txt
 python -i ./alg001.py
