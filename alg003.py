@@ -8,7 +8,7 @@ import requests, json, os
 from sample_texts import *
 
 # call with text and range of compression
-def test05a(the_text=TEXT_5, c_range=range(1,5)):
+def test05a(the_text=TEXT_5, c_range=range(1,6)):
     # Models keys are used for Completions requests. Platform keys are used for Resources requests.
     headers = {
         "Authorization": f"Bearer {os.getenv('FOREFRONT_MODEL_KEY')}",  # model (completion) key

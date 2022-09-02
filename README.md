@@ -261,26 +261,22 @@ App Store.
 ```
 A Financial Times report seems to argue that Apple has allowed app
 developers to collect customer data from iPhone users without their
-permission. Examples of user or device data include, but are not
-limited to: properties of a user’s web browser and its configuration,
-the user’s device and its configuration, the user’s location, or the
-user’s network connection. The loophole is that services such as Snap
+permission. The theory is that this denies companies that make their
+money collecting, curating, and selling your information the right to
+track what you do online. The loophole is that services such as Snap
 and Facebook have changed the way they gather data to create
 anonymized groups of users, rather than to identify individuals. We
-know the battle for privacy — like security — is an eternal one. Smash
-their system
-
-I think the loophole used here contravenes the spirit and expectation
-of Apple’s rule, that this data “may not be combined with other data
-to track a user across apps and websites owned by other companies
-unless you have been granted permission to track by the user.” This
+know the battle for privacy — like security — is an eternal one. I
+think the loophole used here contravenes the spirit and expectation of
+Apple’s rule, that this data “may not be combined with other data to
+track a user across apps and websites owned by other companies unless
+you have been granted permission to track by the user.” Apple’s
+prohibition cites its Developer Program License Agreement. This
 strongly suggests it reserves the right to punish developers who go
-against the spirit of that deal. It wouldn’t be the first time Apple
-threatened to kick Facebook out. It last did so after it was found
-that domestic slaves were being sold on Facebook’s Instagram
-service. It may be time for Apple to make a symbolic example to
-illustrate just how serious it is about privacy.
+against the spirit of that deal. It last did so after it was found
+that domestic slaves were being sold on Facebook’s Instagram service.
 ```
+
 
 ### Forefront (alg003.py):
 
@@ -387,7 +383,8 @@ _Currently breaks on both samples_
 ### Results - Forefront.ai
 
 _This requires an account and access to their "summarize" model,
-code is in alg003, you will need a model key._
+code is in alg003, you will need a model key. At time of writing,
+their pricing equates to about 15 cents per summary._
 
 See: https://www.forefront.ai/blog-posts/how-to-summarize-text-with-ai
 
@@ -398,7 +395,7 @@ python -i ./alg003.py
 >>> # this replicates forefront's blog posting (nytimes article)
 >>> test05a()
 >>> # this runs range of compression levels on specific sample texts
->>> test05a(the_text=TEXT_1, c_range=range(1,5))
+>>> test05a(the_text=TEXT_1, c_range=range(1,6))
 ```
 
 _Also had a trailing sentence above._
