@@ -342,7 +342,41 @@ users more control over how their data is used. Apple has long been at
 the forefront of promoting user privacy.
 ```
 
+As an experiment, here's what Forefront produces when pointed at the underlying
+report (on FT.com), on compression "2":
 
+```
+Apple has made a major change to its privacy policies that could allow
+companies to track iPhone users without their knowledge. The
+Californian consumer watchdog, the Consumer Financial Protection
+Bureau (CFPB), has taken a new approach to policing the online
+advertising industry, allowing companies to share data about their
+users with third parties. Mobile advertising companies are finding
+ways to circumvent Apple’s ban on tracking iPhone users by their
+unique IDs. Apple’s decision to force developers to give users the
+option to delete their data from its App Store has made it a key
+battleground for data privacy advocates. Apple has said it will allow
+some companies to circumvent its strict privacy rules on third-party
+advertising. Apple has long been hailed as the go-to place for mobile
+app developers to get their software to market. The European Union’s
+General Data Protection Regulation (GDPR) is set to change how
+companies use data, but it could also change how they market to you.
+```
+
+Compression levels 4 and 5 on the the same underlying FT.com article are interesting:
+
+```
+Apple has made a subtle change to its privacy policies that could
+allow companies to circumvent its efforts to shield iPhone users from
+unwarranted tracking. Apple has long been a champion of user privacy,
+banning third-party advertising trackers from tracking its users.
+```
+
+```
+The world’s most popular smartphone maker has made it easy for
+companies to circumvent its privacy rules, which are designed to
+shield its users from being tracked by third parties.
+```
 
 ## Setup (alg002)
 
