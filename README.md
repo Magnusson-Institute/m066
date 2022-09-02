@@ -280,7 +280,49 @@ that domestic slaves were being sold on Facebook’s Instagram service.
 
 ### Forefront (alg003.py):
 
-Compression level 3 was broken (got hickups on the phrase 'app advertising ID').
+Compression level 3 breaks unless TEXT_3 is correct to exclude subheadings.
+Note how "attribution" is lost.
+
+_Compression level 2:_
+
+```
+Apple has been accused of letting app developers track iPhone users
+without their knowledge. Apple has introduced a new feature that makes
+it harder for companies that want to track your online activity to do
+so. Apple has long been at pains to ensure its App Store does not
+allow developers to use the devices of their users to track
+them. Apple has closed a loophole that allowed companies to circumvent
+its privacy rules and gather data from iPhone users. Facebook is
+promising to make sure that the data it gathers about you is used only
+for advertising purposes. Target is facing a class action lawsuit over
+its decision to share customer data with a data analytics firm. Apple
+has been accused of using its dominant position in the smartphone
+market to force developers to share user data with the
+company. Apple’s App Tracking controls are an important part of its
+privacy protections for iPhone users. Apple has long been clear about
+its position on app developers circumventing its App Store rules on
+user privacy. Apple has threatened to boot Facebook from its app store
+for running ads that circumvent its app developer agreement. Apple has
+been accused of allowing app developers to share user data with third
+parties without permission. Apple’s App Store is a treasure trove of
+apps that promise to make your life easier, more fun, or more
+productive.
+```
+
+_Compression level 3:_
+
+```
+Apple has introduced new App Tracking Privacy controls to give iPhone
+users greater control over how their data is used by app
+developers. Apple has long been at pains to ensure that apps on its
+App Store do not use the company’s devices to track their
+users. Facebook is promising to give users more control over how their
+data is used by the company. Apple has been accused of circumventing
+its own privacy rules by using a loophole to allow Facebook to track
+iPhone users. Apple has long been clear that its App Store rules
+prohibit advertising or marketing services that circumvent its user
+privacy protections. Apple is a company that prides itself on privacy.
+```
 
 _Compression level 4:_
 
