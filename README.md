@@ -492,7 +492,7 @@ _breaks on sample 2_
 _Currently breaks on both samples_
 
 
-### Results - Forefront.ai
+### Results - test05a() (Forefront.ai)
 
 _This requires an account and access to their "summarize" model,
 code is in alg003, you will need a model key. At time of writing,
@@ -508,13 +508,11 @@ python -i ./alg003.py
 >>> test05a()
 >>> # this runs range of compression levels on specific sample texts
 >>> test05a(the_text=TEXT_1, c_range=range(1,6))
+>>> # this replicates the FT.com article resuls (for example)
+>>> test05a(the_text=TEXT_3_FT, c_range=range(3,6))
 ```
 
-_Also had a trailing sentence above._
-
-Sample 5:
-
-Forefront reports on their blog that it should generate:
+Forefront reports on their blog that it should generate (sample 5):
 
 ```
 The job market is great but people still prefer doing gig work
@@ -551,7 +549,6 @@ employed by companies such as Uber, AirBnB and TaskRabbit. The rise of
 online platforms that connect workers with customers has made it easy
 for companies to hire workers on short-term contracts.
 ```
-
 
 ```
 [4] The job market is strong, but many workers are turning to side gigs to
