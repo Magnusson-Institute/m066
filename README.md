@@ -346,21 +346,23 @@ As an experiment, here's what Forefront produces when pointed at the underlying
 report (on FT.com), on compression "2":
 
 ```
-Apple has made a major change to its privacy policies that could allow
-companies to track iPhone users without their knowledge. The
-Californian consumer watchdog, the Consumer Financial Protection
-Bureau (CFPB), has taken a new approach to policing the online
-advertising industry, allowing companies to share data about their
-users with third parties. Mobile advertising companies are finding
-ways to circumvent Apple’s ban on tracking iPhone users by their
-unique IDs. Apple’s decision to force developers to give users the
-option to delete their data from its App Store has made it a key
-battleground for data privacy advocates. Apple has said it will allow
-some companies to circumvent its strict privacy rules on third-party
-advertising. Apple has long been hailed as the go-to place for mobile
-app developers to get their software to market. The European Union’s
-General Data Protection Regulation (GDPR) is set to change how
-companies use data, but it could also change how they market to you.
+Apple has made a major change to how it lets app developers use data
+from its iPhone users, in a move that could allow companies to track
+their movements and habits without their knowledge. The Californian
+consumer watchdog, the Consumer Financial Protection Bureau, last year
+told companies that share data with Apple that they must first remove
+all references to individual consumers. Mobile advertising companies
+have found ways to circumvent Apple’s ban on tracking iPhone users by
+their unique IDs. Apple’s decision to force developers to give users
+the option to delete their data from its App Store is a sign that the
+company is taking data privacy seriously, according to a leading app
+developer. Apple has said it will allow some companies to circumvent
+its strict privacy rules on third-party advertising. Apple has long
+been at the forefront of mobile privacy, but new research from app
+developer Adblock Plus shows that some of its most popular apps are
+continuing to leak user data. The European Union’s General Data
+Protection Regulation (GDPR) is designed to give consumers control
+over how their data is used by companies.
 ```
 
 Compression levels 4 and 5 on the the same underlying FT.com article are interesting:
@@ -376,6 +378,40 @@ banning third-party advertising trackers from tracking its users.
 The world’s most popular smartphone maker has made it easy for
 companies to circumvent its privacy rules, which are designed to
 shield its users from being tracked by third parties.
+```
+
+But after some small polishing of the input text (removing extraneous
+"recommended" texts to podcasts embedded in the article), levels 4 and
+5 changed to:
+
+```
+Apple has made a subtle change to its privacy policies that could
+allow companies to circumvent its efforts to shield iPhone users from
+unwarranted tracking. Apple’s new privacy rules for iOS apps are so
+broad that companies have found ways to circumvent them.
+```
+
+```
+Apple has made it clear that its iPhones are not to be used as
+surveillance devices.
+```
+
+In contrast, here's XLNET results for the same (FT) article:
+
+```
+Apple has allowed app developers to collect data from its 1bn iPhone
+users for targeted advertising, in an unacknowledged shift that lets
+companies follow a much looser interpretation of its controversial
+privacy policy. Lockdown Privacy, an app that blocks ad trackers, has
+called Apple’s policy “functionally useless in stopping third-party
+tracking”. But the companies aggregating user-level data said the
+reason apps continue to “leak” information such as a user’s IP address
+and location was simply because some require such information to
+function. Companies will pledge that they only look at user-level data
+once it has been anonymised, but without access to the data or
+algorithms working behind the scenes, users won’t really know if their
+data privacy has been preserved, said Munchbach. “ It’s not
+unreasonable to assume it leaves a lot to be desired.”'
 ```
 
 ## Setup (alg002)
